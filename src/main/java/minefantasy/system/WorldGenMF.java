@@ -191,7 +191,7 @@ public class WorldGenMF implements IWorldGenerator{
 				}
 			}
 			
-			if (cfg.generateSlate && random.nextInt(75) == 0) {
+			if (cfg.generateSlate && random.nextInt(25) == 0) {
 				for (int k = 0; k < 1; k++) {
 					int k1 = chunkX*16 + random.nextInt(16);
 					int k2 = random.nextInt(64);
