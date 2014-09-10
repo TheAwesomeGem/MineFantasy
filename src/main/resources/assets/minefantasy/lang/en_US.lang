@@ -1,0 +1,1078 @@
+attribute.weapon.penetrateArmor=Armor Penetration
+attribute.weapon.joust=Joust
+attribute.weapon.extendedReach=Reach
+attribute.weapon.attackSpeed=Attack Speed
+attribute.weapon.stealthWeapon=Stealth Bonus
+attribute.weapon.block=Block
+attribute.weapon.block.special=Special Block
+attribute.weapon.boostarmourdamage=Armor Damage
+attribute.weapon.sharpness=Sharpened
+attribute.arrow.damage=Projectile Damage
+attribute.arrow.force=Projectile Force
+attribute.shield.threshold=Damage Threshold
+info.fuel=Fuel
+
+achievement.minefantasy.dragonslayer=Dragon Slayer
+achievement.minefantasy.dragonslayer.desc=Defeat a Dragon
+achievement.minefantasy.dragonforger=Ancient Arts
+achievement.minefantasy.dragonforger.desc=Alloy Dragonforge Steel
+achievement.minefantasy.copper=Copper Age
+achievement.minefantasy.copper.desc=Smelt Copper
+achievement.minefantasy.tin=Tin Smelter
+achievement.minefantasy.tin.desc=Smelt Tin
+achievement.minefantasy.alloy=Basic Alloying
+achievement.minefantasy.alloy.desc=Craft a crucible
+achievement.minefantasy.bronze=Bronze Age
+achievement.minefantasy.bronze.desc=Alloy Bronze
+achievement.minefantasy.tanner=Tanner
+achievement.minefantasy.tanner.desc=Craft a Tanning Rack
+achievement.minefantasy.anvil=Metalworks
+achievement.minefantasy.anvil.desc=Create an Anvil
+achievement.minefantasy.forged=Blacksmith
+achievement.minefantasy.forged.desc=Forge an Item
+achievement.minefantasy.iron=Iron Age
+achievement.minefantasy.iron.desc=Smelt Iron
+achievement.minefantasy.bomb=Firepower
+achievement.minefantasy.bomb.desc=Create a Bomb
+achievement.minefantasy.plate=Knight
+achievement.minefantasy.plate.desc=Create Plate Armor
+achievement.minefantasy.arrow=Heavy Archer
+achievement.minefantasy.arrow.desc=Create a Broad arrow
+achievement.minefantasy.triplekill=Triple Kill
+achievement.minefantasy.triplekill.desc=Kill 3 enemies with 1 arrow
+achievement.minefantasy.granite=Hard Rock
+achievement.minefantasy.granite.desc=Mine Granite
+achievement.minefantasy.steel=Steel Age
+achievement.minefantasy.steel.desc=Produce Steel
+achievement.minefantasy.encrust=Expert Smith
+achievement.minefantasy.encrust.desc=Create Encrusted tools
+achievement.minefantasy.mithril=Mythic Discovery
+achievement.minefantasy.mithril.desc=Mine Mithril
+achievement.minefantasy.ignotumite=The Envy of the lands
+achievement.minefantasy.ignotumite.desc=Discover Ignotumite
+
+item.bandage.crude.name=Crude Bandage
+item.bandage.basic.name=Wool Bandage
+item.bandage.tough.name=Strong Bandage
+
+container.mfAnvil=Anvil
+container.mfForge=Forge
+container.oven=Oven
+container.bloomery=Bloomery
+container.blastfurn=Blast Furnace
+container.blastfurn.out=Blast Furnace Result
+container.blastfurn.fuel=Blast Furnace Heater
+container.crucible=Crucible
+
+
+death.attack.bomb.thrown=%1$s was blown up by %2$s
+death.attack.bomb=%1$s was blown up
+death.attack.bomb.suicide=%1$s blew themself up
+
+entity.MineFantasy.Minotaur.name=Minotaur
+entity.MineFantasy.MinotaurTitan.name=Minotaur Titan
+entity.MineFantasy.Basilisk.name=Basilisk
+entity.MineFantasy.Drake.name=Drake
+entity.MineFantasy.SkeletalKnight.name=Skeletal Knight
+entity.MineFantasy.SmallDragon.name=Small Dragon
+entity.MineFantasy.HoundMF.name=Hound
+entity.MineFantasy.ImprovedZombie.name=Improved Zombie
+entity.MineFantasy.ImprovedSkeleton.name=Improved Skeleton
+
+tile.oven.name=Oven
+tile.mudBrick=Mud Bricks
+tile.mudBrick.rough=Rough Mud Bricks
+tile.rePlanks.name=Reinforced Planks
+tile.oreSilver.name=Silver Ore
+tile.oreCopper.name=Copper Ore
+tile.oreTin.name=Tin Ore
+tile.oreIgnotumite.name=Ignotumite Ore
+tile.clayWall.name=Clay Wall
+tile.chimney=Chimney
+
+tile.oreUtil.nitre.name=Niter Ore
+tile.oreUtil.sulfur.name=Sulfur Ore
+
+tile.oreMythic.mithril.name= Mithril Ore
+tile.oreMythic.deepIron.name=Deep Iron Ore
+
+tile.oreInferno.name=Inferno Coal Ore
+tile.oreHell.name=Hellfire Coal Ore
+tile.cobbBrick=Cobblestone Bricks
+tile.cobbBrick.cracked=Cracked Cobblestone Bricks
+tile.cobbBrick.mossy=Mossy Cobblestone Bricks
+
+tile.cobbBrick.rough=Rough Cobblestone Bricks
+tile.cobbBrick.rough.cracked=Rough Cracked Cobblestone Bricks
+tile.cobbBrick.rough.mossy=Rough Mossy Cobblestone Bricks
+
+tile.granite.name=Granite
+tile.granite.brick=Granite Brick
+tile.granite.brick.cracked=Cracked Granite Brick
+tile.granite.brick.mossy=Mossy Granite Brick
+tile.slate=Slate
+tile.slate.tile=Slate Tiles
+tile.slate.tile.d=Diagonal Slate Tiles
+tile.slate.brick=Slate Brick
+tile.slate.half=Slate Slab
+tile.slate.tile.half=Slate Tiles Slab
+tile.slate.tile.d.half=Diagonal Slate Tile Slab
+tile.slate.brick.half=Slate Brick Slab
+tile.leaves.ironbark=Ironbark Leaves
+tile.leaves.ebony=Ebony Leaves
+tile.planks.ironbark=Ironbark Planks
+tile.planks.ebony=Ebony Planks
+tile.sapling.ironbark=Ironbark Sapling
+tile.sapling.ebony=Ebony Sapling
+tile.log.ironbark=Ironbark Log
+tile.log.ebony=Ebony Log
+tile.stairCobbBrick.name=Cobblestone Brick Stairs
+tile.hayRoof.name=Hay Roofing
+tile.limestone.name=Limestone
+tile.firepit.name=Firepit
+tile.stairSlate.name=Slate Stairs
+tile.stairSmoothstone.name=Stone Stairs
+tile.stairSlateTile.name=Tile Slate Stairs
+tile.stairDSlateTile.name=Diagonal Tile Slate Stairs
+tile.stairSlateBrick.name=Brick Slate Stairs
+tile.lantern.name=Lantern
+block.forge=Forge
+tile.tanner.name=Tanning Rack
+tile.weaponRack.name=Rack
+block.bloomery=Bloomery
+block.crucible.stone=Crucible
+block.crucible.granite=Granite Crucible
+tile.bellows.name=Bellows
+block.blastfurnace.shaft=Blast Furnace Shaft
+block.blastfurnace.input=Blast Furnace Input
+block.blastfurnace.heater=Blast Furnace Heater
+block.blastfurnace.output=Blast Furnace Output
+block.dogbowl=Dog Bowl
+tile.grinder.name=Grinder
+block.triphammer=Trip Hammer
+block.crank=Crank
+tile.slag.name=Slag
+tile.roast.name=Spit Roast
+block.furnace.heater=Heater
+tile.foodPrep.name=Benchtop
+tile.tailor.name=Tailor Bench
+tile.spinningWheel.name=Spinning Wheel
+tile.cobbBrick.half=Cobblestone Brick Slab
+tile.granite.half=Granite Stone Slab
+tile.granite.brick.half=Granite Brick Slab
+tile.smoothstone.half=Smooth Stone Slab
+tile.mudBrick.half=Mud Brick Slab
+tile.ironbark.half=Ironbark Slab
+tile.ebony.half=Ebony Slab
+tile.rePlanks.half=Reinforced Planks Slab
+tile.hayRoof.half=Hay Slab
+
+tier.stone=Stone
+tier.bronze=Bronze
+tier.iron=Iron
+tier.steel=Steel
+tier.mithril=Mithril
+tier.copper=Copper
+tier.tin=Tin
+tier.silver=Silver
+tier.iron.wrought=Wrought Iron
+tier.iron.deep=Deep Iron
+tier.iron=Iron
+tier.brick=Brick
+tier.wood=Wooden
+
+size.small=Small
+block.blockstore=Block Of
+
+itemGroup.pets=Pets
+itemGroup.forgedweapon=Forged Weapons
+itemGroup.forgedarmour=Forged Armor
+itemGroup.forgedtool=Forged Tools
+itemGroup.tailor=Tailoring
+itemGroup.archery=Archery
+
+item.doorIronbarkItem.name=Ironbark Door
+item.doorHardItem.name=Reinforced Door
+item.doorSteelItem.name=Steel Door
+
+item.muttonRaw.name=Raw Mutton
+item.muttonCooked.name=Cooked Mutton
+
+item.drakeRaw.name=Raw Drake Meat
+item.drakeCooked.name=Cooked Drake Meat
+item.basiliskRaw.name=Raw Basilisk Meat
+item.basiliskCooked.name=Cooked Basilisk Meat
+
+item.malletWood.name=Mallet
+item.malletIronbark.name=Ironbark Mallet
+item.malletEbony.name=Ebony Mallet
+
+item.hammerStone.name=Stone Hammer
+item.hammerCopper.name=Copper Hammer
+item.hammerTin.name=Tin Hammer
+item.hammerBronze.name=Bronze Hammer
+item.hammerIron.name=Iron Hammer
+item.hammerSteel.name=Steel Hammer
+item.hammerMithril.name=Mithril Hammer
+item.hammerPower.name=Ornate Hammer
+item.hammerDragon.name=Dragonforge Hammer
+item.hammerDeepIron.name=Deep Iron Hammer
+
+item.handpickBronze.name=Bronze Handpick
+item.handpickIron.name=Iron Handpick
+item.handpickSteel.name=Steel Handpick
+item.handpickEncrusted.name=Encrusted Handpick
+item.handpickMithril.name=Mithril Handpick
+item.handpickDragonforge.name=Dragonforge Handpick
+item.handpickIgnotumite.name=Ignotumite Handpick
+item.handpickDeepIron.name=Deep Iron Handpick
+
+item.pickIronForged.name=Iron Pickaxe
+item.pickSteelForged.name=Steel Pickaxe
+item.pickIgnotumiteForged.name=Ignotumite Pickaxe
+item.pickTin.name=Tin Pickaxe
+item.pickBronze.name=Bronze Pickaxe
+item.pickMithril.name=Mithril Pickaxe
+item.pickEncrusted.name=Encrusted Pickaxe
+item.pickCopperForged.name=Copper Pickaxe
+item.pickDragon.name=Dragonforge Pickaxe
+item.pickDeepIron.name=Deep Iron Pickaxe
+
+item.axeIronForged.name=Iron Axe
+item.axeSteelForged.name=Steel Axe
+item.axeIgnotumiteForged.name=Ignotumite Axe
+item.axeTin.name=Tin Axe
+item.axeBronze.name=Bronze Axe
+item.axeMithril.name=Mithril Axe
+item.axeEncrusted.name=Encrusted Axe
+item.axeCopperForged.name=Copper Axe
+item.axeDragon.name=Dragonforge Axe
+item.axeDeepIron.name=Deep Iron Axe
+
+item.spadeIronForged.name=Iron Shovel
+item.spadeSteel.name=Steel Shovel
+item.spadeIgnotumite.name=Ignotumite Shovel
+item.spadeTin.name=Tin Shovel
+item.spadeBronze.name=Bronze Shovel
+item.spadeMithril.name=Mithril Shovel
+item.spadeEncrusted.name=Encrusted Shovel
+item.spadeCopper.name=Copper Shovel
+item.spadeDragon.name=Dragonforge Shovel
+item.spadeDeepIron.name=Deep Iron Shovel
+
+item.hoeIronForged.name=Iron Hoe
+item.hoeSteelForged.name=Steel Hoe
+item.hoeTin.name=Tin Hoe
+item.hoeBronze.name=Bronze Hoe
+item.hoeMithril.name=Mithril Hoe
+item.hoeCopperForged.name=Copper Hoe
+item.hoeDragon.name=Dragonforge Hoe
+item.hoeDeepIron.name=Deep Iron Hoe
+
+item.knifeStone.name=Stone Knife
+item.knifeCopper.name=Copper Knife
+item.knifeTin.name=Tin Knife
+item.knifeBronze.name=Bronze Knife
+item.knifeIron.name=Iron Knife
+item.knifeSteel.name=Steel Knife
+item.knifeMithril.name=Mithril Knife
+item.knifeDragon.name=Dragonforge Knife
+item.knifeDeepIron.name=Deep Iron Knife
+
+item.tongsStone.name=Stone Tongs
+item.tongsCopper.name=Copper Tongs
+item.tongsTin.name=Tin Tongs
+item.tongsBronze.name=Bronze Tongs
+item.tongsIron.name=Iron Tongs
+item.tongsSteel.name=Steel Tongs
+item.tongsMithril.name=Mithril Tongs
+item.tongsDragon.name=Dragonforge Tongs
+item.tongsDeepIron.name=Deep Iron Tongs
+
+item.hammerRepair.name=Weak Repair Hammer
+item.hammerRepairOrnate.name=Weak Ornate Repair Hammer
+item.hammerRepair2.name=Repair Hammer
+item.hammerRepairOrnate2.name=Ornate Repair Hammer
+item.hammerRepairArtisan.name=Artisan Repair Hammer
+item.hammerRepairOrnateArtisan.name=Ornate Artisan Repair Hammer
+
+item.shearsCopper.name=Copper Shears
+item.shearsTin.name=Tin Shears
+item.shearsBronze.name=Bronze Shears
+item.shearsIron.name=Iron Shears
+item.shearsSteel.name=Steel Shears
+item.shearsMithril.name=Mithril Shears
+item.shearsDragon.name=Dragonforge Shears
+item.shearsDeepIron.name=Deep Iron Shears
+
+item.rakeBronze.name=Bronze Rake
+item.rakeIron.name=Iron Rake
+item.rakeSteel.name=Steel Rake
+item.rakeMithril.name=Mithril Rake
+item.rakeDragon.name=Dragonforge Rake
+item.rakeDeepIron.name=Deep Iron Rake
+
+item.mattockBronze.name=Bronze Mattock
+item.mattockIron.name=Iron Mattock
+item.mattockSteel.name=Steel Mattock
+item.mattockMithril.name=Mithril Mattock
+item.mattockDragon.name=Dragonforge Mattock
+item.mattockDeepIron.name=Deep Iron Mattock
+
+item.sawBronze.name=Bronze Saw
+item.sawIron.name=Iron Saw
+item.sawSteel.name=Steel Saw
+item.sawMithril.name=Mithril Saw
+item.sawDragon.name=Dragonforge Saw
+item.sawDeepIron.name=Deep Iron Saw
+
+item.scytheBronze.name=Bronze Scythe
+item.scytheIron.name=Iron Scythe
+item.scytheSteel.name=Steel Scythe
+item.scytheMithril.name=Mithril Scythe
+item.scytheDragon.name=Dragonforge Scythe
+item.scytheDeepIron.name=Deep Iron Scythe
+
+item.axePrim.name=Stone Axe
+item.flintAndRock.name=Dry Rocks
+item.tinderbox.name=Tinderbox
+item.pickStonePrim.name=Stone Hand Pick
+item.pickCopperPrim.name=Copper Hand Pick
+
+item.spearStonePrim.name=Stone Spear
+item.spearCopperPrim.name=Copper Spear
+item.javelin.name=Javelin
+item.armourRawhide.name=Hide Armor
+item.legsRawhide.name=Hide Leggings
+item.clubPrim.name=Wooden Club
+item.clubStonePrim.name=Stone Club
+item.sling.name=Sling
+
+item.ingotSteel.name=Steel Ingot
+item.ingotSilver.name=Silver Ingot
+item.iroShard.name=Iron Shard
+item.explosive.name=Blackpowder
+item.plank.name=Plank
+
+item.hound_feed.name=Hound Feedbag
+item.petChange.name=Hound Trade Papers
+item.hound_sPack.name=Hound Pack
+item.hound_bPack.name=large Hound Pack
+
+item.hound_BMail.name=Bronze Hound Chain
+item.hound_BMailH.name=Bronze Hound Chain Helm
+item.hound_IMail.name=Iron Hound Chain
+item.hound_IMailH.name=Iron Hound Chain Helm
+item.hound_SMail.name=Steel Hound Chain
+item.hound_SMailH.name=Steel Hound Chain Helm
+item.hound_DMail.name=Dragonforge Hound Chain
+item.hound_DMailH.name=Dragonforge Hound Chain Helm
+item.hound_DImail.name=Deep Iron Hound Chain
+item.hound_DImailH.name=Deep Iron Hound Chain Helm
+item.hound_MMail.name=Mithril Hound Chain
+item.hound_MMailH.name=Mithril Hound Chain Helm
+item.hound_GMail.name=Guilded Hound Chain
+item.hound_GMailH.name=Guilded Hound Chain Helm
+
+item.hound_Bplate.name=Bronze Hound Plate
+item.hound_BplateH.name=Bronze Hound Plate Helm
+item.hound_Iplate.name=Iron Hound Plate
+item.hound_IplateH.name=Iron Hound Plate Helm
+item.hound_Splate.name=Steel Hound Plate
+item.hound_SplateH.name=Steel Hound Plate Helm
+item.hound_Dplate.name=Dragonforge Hound Plate
+item.hound_DplateH.name=Dragonforge Hound Plate Helm
+item.hound_Mplate.name=Mithril Hound Plate
+item.hound_MplateH.name=Mithril Hound Plate Helm
+item.hound_DIplate.name=Deep Iron Hound Plate
+item.hound_DIplateH.name=Deep Iron Hound Plate Helm
+item.hound_Eplate.name=Encrusted Hound Plate
+item.hound_EplateH.name=Encrusted Hound Plate Helm
+item.hound_Gplate.name=Guilded Hound Plate
+item.hound_GplateH.name=Guilded Hound Plate Helm
+
+item.hound_Bteeth.name=Bronze Hound Teeth
+item.hound_Iteeth.name=Iron Hound Teeth
+item.hound_Oteeth.name=Ornate Hound Teeth
+item.hound_Steeth.name=Steel Hound Teeth
+item.hound_Dteeth.name=Dragonforge Hound Teeth
+item.hound_Mteeth.name=Mithril Hound Teeth
+item.hound_DIteeth.name=Deep Iron Hound Teeth
+item.hound_Eteeth.name=Encrusted Hound Teeth
+item.hound_Igteeth.name=Ignotumite Hound Teeth
+
+item.needleBone.name=Bone Needle
+item.needleBronze.name=Bronze Needle
+item.needleIron.name=Iron Needle
+item.needleSteel.name=Steel Needle
+item.needleMithril.name=Mithril Needle
+item.needleDeepIron.name=Deep Iron Needle
+
+item.crossbowHand.name=Hand Crossbow
+item.crossbowLight.name=Light Crossbow
+item.crossbowRepeat.name=Repeater Crossbow
+item.crossbowHeavy.name=Heavy Crossbow
+
+item.shortbow.name=Shortbow
+item.longbow.name=Longbow
+item.bowComposite.name=Composite Bow
+item.bowIronbark.name=Ironbark Bow
+item.bowEbony.name=Ebony Bow
+item.bowBronze.name=Bronze Bow
+item.bowIron.name=Iron Bow
+item.bowOrnate.name=Ornate Bow
+item.bowSteel.name=Steel Bow
+item.bowDragonforge.name=Dragonforge Bow
+item.bowMithril.name=Mithril Bow
+item.bowDeepIron.name=Deep Iron Bow
+
+item.daggerBronze.name=Bronze Dagger
+item.daggerIron.name=Iron Dagger
+item.daggerSteel.name=Steel Dagger
+item.daggerMithril.name=Mithril Dagger
+item.daggerEncrusted.name=Encrusted Dagger
+item.daggerOrnate.name=Ornate Dagger
+item.daggerDragon.name=Dragonforge Dagger
+item.daggerDeepIron.name=Deep Iron Dagger
+item.daggerIgnotumite.name=Ignotumite Dagger
+
+item.swordTin.name=Tin Sword
+item.swordCopper.name=Copper Sword
+item.swordBronze.name=Bronze Sword
+item.swordIron.name=Iron Sword
+item.swordSteel.name=Steel Sword
+item.swordMithril.name=Mithril Sword
+item.swordEncrusted.name=Encrusted Sword
+item.swordOrnate.name=Ornate Sword
+item.swordDragonforge.name=Dragonforge Sword
+item.swordDeepIron.name=Deep Iron Sword
+item.swordIgnotumite.name=Ignotumite Sword
+
+item.broadswordBronze.name=Bronze Broadsword
+item.broadswordIron.name=Iron Broadsword
+item.broadswordSteel.name=Steel Broadsword
+item.broadswordMithril.name=Mithril Broadsword
+item.broadswordEncrusted.name=Encrusted Broadsword
+item.broadswordOrnate.name=Ornate Broadsword
+item.broadswordDragonforge.name=Dragonforge Broadsword
+item.broadswordDeepIron.name=Deep Iron Broadsword
+item.broadswordIgnotumite.name=Ignotumite Broadsword
+
+item.greatswordBronze.name=Bronze Greatsword
+item.greatswordIron.name=Iron Greatsword
+item.greatswordSteel.name=Steel Greatsword
+item.greatswordMithril.name=Mithril Greatsword
+item.greatswordEncrusted.name=Encrusted Greatsword
+item.greatswordOrnate.name=Ornate Greatsword
+item.greatswordDragon.name=Dragonforge Greatsword
+item.greatswordDeepIron.name=Deep Iron Greatsword
+item.greatswordIgnotumite.name=Ignotumite Greatsword
+
+item.maceCopper.name=Copper Mace
+item.maceTin.name=Tin Mace
+item.maceBronze.name=Bronze Mace
+item.maceIron.name=Iron Mace
+item.maceSteel.name=Steel Mace
+item.maceMithril.name=Mithril Mace
+item.maceEncrusted.name=Encrusted Mace
+item.maceOrnate.name=Ornate Mace
+item.maceDragon.name=Dragonforge Mace
+item.maceDeepIron.name=Deep Iron Mace
+item.maceIgnotumite.name=Ignotumite Mace
+
+item.warpickBronze.name=Bronze Warpick
+item.warpickIron.name=Iron Warpick
+item.warpickSteel.name=Steel Warpick
+item.warpickMithril.name=Mithril Warpick
+item.warpickEncrusted.name=Encrusted Warpick
+item.warpickOrnate.name=Ornate Warpick
+item.warpickDragon.name=Dragonforge Warpick
+item.warpickDeepIron.name=Deep Iron Warpick
+item.warpickIgnotumite.name=Ignotumite Warpick
+
+item.greatmaceBronze.name=Bronze Greatmace
+item.greatmaceIron.name=Iron Greatmace
+item.greatmaceSteel.name=Steel Greatmace
+item.greatmaceMithril.name=Mithril Greatmace
+item.greatmaceEncrusted.name=Encrusted Greatmace
+item.greatmaceOrnate.name=Ornate Greatmace
+item.greatmaceDragon.name=Dragonforge Greatmace
+item.greatmaceDeepIron.name=Deep Iron Greatmace
+item.greatmaceIgnotumite.name=Ignotumite Greatmace
+
+item.warhammerBronze.name=Bronze Warhammer
+item.warhammerIron.name=Iron Warhammer
+item.warhammerSteel.name=Steel Warhammer
+item.warhammerMithril.name=Mithril Warhammer
+item.warhammerEncrusted.name=Encrusted Warhammer
+item.warhammerOrnate.name=Ornate Warhammer
+item.warhammerDragon.name=Dragonforge Warhammer
+item.warhammerDeepIron.name=Deep Iron Warhammer
+item.warhammerIgnotumite.name=Ignotumite Warhammer
+
+item.waraxeCopper.name=Copper Waraxe
+item.waraxeTin.name=Tin Waraxe
+item.waraxeBronze.name=Bronze Waraxe
+item.waraxeIron.name=Iron Waraxe
+item.waraxeSteel.name=Steel Waraxe
+item.waraxeMithril.name=Mithril Waraxe
+item.waraxeEncrusted.name=Encrusted Waraxe
+item.waraxeOrnate.name=Ornate Waraxe
+item.waraxeDragon.name=Dragonforge Waraxe
+item.waraxeDeepIron.name=Deep Iron Waraxe
+item.waraxeIgnotumite.name=Ignotumite Waraxe
+
+item.battleaxeBronze.name=Bronze Battleaxe
+item.battleaxeIron.name=Iron Battleaxe
+item.battleaxeSteel.name=Steel Battleaxe
+item.battleaxeMithril.name=Mithril Battleaxe
+item.battleaxeEncrusted.name=Encrusted Battleaxe
+item.battleaxeOrnate.name=Ornate Battleaxe
+item.battleaxeDragon.name=Dragonforge Battleaxe
+item.battleaxeDeepIron.name=Deep Iron Battleaxe
+item.battleaxeIgnotumite.name=Ignotumite Battleaxe
+
+item.lanceBronze.name=Bronze Lance
+item.lanceIron.name=Iron Lance
+item.lanceSteel.name=Steel Lance
+item.lanceMithril.name=Mithril Lance
+item.lanceEncrusted.name=Encrusted Lance
+item.lanceOrnate.name=Ornate Lance
+item.lanceDragonforge.name=Dragonforge Lance
+item.lanceDeepIron.name=Deep Iron Lance
+item.lanceIgnotumite.name=Ignotumite Lance
+
+item.spearBronze.name=Bronze Spear
+item.spearIron.name=Iron Spear
+item.spearSteel.name=Steel Spear
+item.spearMithril.name=Mithril Spear
+item.spearEncrusted.name=Encrusted Spear
+item.spearOrnate.name=Ornate Spear
+item.spearDragon.name=Dragonforge Spear
+item.spearDeepIron.name=Deep Iron Spear
+item.spearIgnotumite.name=Ignotumite Spear
+
+item.halbeardBronze.name=Bronze Halbeard
+item.halbeardIron.name=Iron Halbeard
+item.halbeardSteel.name=Steel Halbeard
+item.halbeardMithril.name=Mithril Halbeard
+item.halbeardEncrusted.name=Encrusted Halbeard
+item.halbeardOrnate.name=Ornate Halbeard
+item.halbeardDragon.name=Dragonforge Halbeard
+item.halbeardDeepIron.name=Deep Iron Halbeard
+item.halbeardIgnotumite.name=Ignotumite Halbeard
+
+item.apronSmithy.name=Blacksmith Apron
+
+item.roughLeatherHelmet.name=Rough Leather Helmet
+item.roughLeatherChest.name=Rough Leather Armor
+item.roughLeatherLegs.name=Rough Leather Leggings
+item.roughLeatherBoots.name=Rough Leather Boots
+
+item.stealthHelmet.name=Shrouded Helmet
+item.stealthChest.name=Shrouded Armor
+item.stealthLegs.name=Shrouded Leggings
+item.stealthBoots.name=Shrouded Boots
+
+
+
+item.bronzeScaleHelmet.name=Bronze Scale Helmet
+item.bronzeScaleChest.name=Bronze Scale Armor
+item.bronzeScaleLegs.name=Bronze Scale Leggings
+item.bronzeScaleBoots.name=Bronze Scale Boots
+
+item.ironScaleHelmet.name=Iron Scale Helmet
+item.ironScaleChest.name=Iron Scale Armor
+item.ironScaleLegs.name=Iron Scale Leggings
+item.ironScaleBoots.name=Iron Scale Boots
+
+item.steelScaleHelmet.name=Steel Scale Helmet
+item.steelScaleChest.name=Steel Scale Armor
+item.steelScaleLegs.name=Steel Scale Leggings
+item.steelScaleBoots.name=Steel Scale Boots
+
+item.deepIronScaleHelmet.name=Deep Iron Scale Helmet
+item.deepIronScaleChest.name=Deep Iron Scale Armor
+item.deepIronScaleLegs.name=Deep Iron Scale Leggings
+item.deepIronScaleBoots.name=Deep Iron Scale Boots
+
+item.mithrilScaleHelmet.name=Mithril Scale Helmet
+item.mithrilScaleChest.name=Mithril Scale Armor
+item.mithrilScaleLegs.name=Mithril Scale Leggings
+item.mithrilScaleBoots.name=Mithril Scale Boots
+
+item.guildedScaleHelmet.name=Guilded Scale Helmet
+item.guildedScaleChest.name=Guilded Scale Armor
+item.guildedScaleLegs.name=Guilded Scale Leggings
+item.guildedScaleBoots.name=Guilded Scale Boots
+
+item.encrustedScaleHelmet.name=Encrusted Scale Helmet
+item.encrustedScaleChest.name=Encrusted Scale Armor
+item.encrustedScaleLegs.name=Encrusted Scale Leggings
+item.encrustedScaleBoots.name=Encrusted Scale Boots
+
+item.dragonforgeScaleHelmet.name=Dragonforge Scale Helmet
+item.dragonforgeScaleChest.name=Dragonforge Scale Armor
+item.dragonforgeScaleLegs.name=Dragonforge Scale Leggings
+item.dragonforgeScaleBoots.name=Dragonforge Scale Boots
+
+item.rawhideLegs.name=Hide Leggings
+item.rawhideChest.name=Rawhide Armor
+
+item.bronzeChainHelmet.name=Bronze Chain Helmet
+item.bronzeChainChest.name=Bronze Chain Armor
+item.bronzeChainLegs.name=Bronze Chain Leggings
+item.bronzeChainBoots.name=Bronze Chain Boots
+
+item.ironChainHelmet.name=Iron Chain Helmet
+item.ironChainChest.name=Iron Chain Armor
+item.ironChainLegs.name=Iron Chain Leggings
+item.ironChainBoots.name=Iron Chain Boots
+
+item.steelChainHelmet.name=Steel Chain Helmet
+item.steelChainChest.name=Steel Chain Armor
+item.steelChainLegs.name=Steel Chain Leggings
+item.steelChainBoots.name=Steel Chain Boots
+
+item.deepIronChainHelmet.name=Deep Iron Chain Helmet
+item.deepIronChainChest.name=Deep Iron Chain Armor
+item.deepIronChainLegs.name=Deep Iron Chain Leggings
+item.deepIronChainBoots.name=Deep Iron Chain Boots
+
+item.mithrilChainHelmet.name=Mithril Chain Helmet
+item.mithrilChainChest.name=Mithril Chain Armor
+item.mithrilChainLegs.name=Mithril Chain Leggings
+item.mithrilChainBoots.name=Mithril Chain Boots
+
+item.guildedChainHelmet.name=Guilded Chain Helmet
+item.guildedChainChest.name=Guilded Chain Armor
+item.guildedChainLegs.name=Guilded Chain Leggings
+item.guildedChainBoots.name=Guilded Chain Boots
+
+item.encrustedChainHelmet.name=Encrusted Chain Helmet
+item.encrustedChainChest.name=Encrusted Chain Armor
+item.encrustedChainLegs.name=Encrusted Chain Leggings
+item.encrustedChainBoots.name=Encrusted Chain Boots
+
+item.dragonforgeChainHelmet.name=Dragonforge Chain Helmet
+item.dragonforgeChainChest.name=Dragonforge Chain Armor
+item.dragonforgeChainLegs.name=Dragonforge Chain Leggings
+item.dragonforgeChainBoots.name=Dragonforge Chain Boots
+
+
+
+
+item.bronzeSplintHelmet.name=Bronze Splint Helmet
+item.bronzeSplintChest.name=Bronze Splint Armor
+item.bronzeSplintLegs.name=Bronze Splint Leggings
+item.bronzeSplintBoots.name=Bronze Splint Boots
+
+item.ironSplintHelmet.name=Iron Splint Helmet
+item.ironSplintChest.name=Iron Splint Armor
+item.ironSplintLegs.name=Iron Splint Leggings
+item.ironSplintBoots.name=Iron Splint Boots
+
+item.steelSplintHelmet.name=Steel Splint Helmet
+item.steelSplintChest.name=Steel Splint Armor
+item.steelSplintLegs.name=Steel Splint Leggings
+item.steelSplintBoots.name=Steel Splint Boots
+
+item.deepIronSplintHelmet.name=Deep Iron Splint Helmet
+item.deepIronSplintChest.name=Deep Iron Splint Armor
+item.deepIronSplintLegs.name=Deep Iron Splint Leggings
+item.deepIronSplintBoots.name=Deep Iron Splint Boots
+
+item.mithrilSplintHelmet.name=Mithril Splint Helmet
+item.mithrilSplintChest.name=Mithril Splint Armor
+item.mithrilSplintLegs.name=Mithril Splint Leggings
+item.mithrilSplintBoots.name=Mithril Splint Boots
+
+item.guildedSplintHelmet.name=Guilded Splint Helmet
+item.guildedSplintChest.name=Guilded Splint Armor
+item.guildedSplintLegs.name=Guilded Splint Leggings
+item.guildedSplintBoots.name=Guilded Splint Boots
+
+item.encrustedSplintHelmet.name=Encrusted Splint Helmet
+item.encrustedSplintChest.name=Encrusted Splint Armor
+item.encrustedSplintLegs.name=Encrusted Splint Leggings
+item.encrustedSplintBoots.name=Encrusted Splint Boots
+
+item.dragonforgeSplintHelmet.name=Dragonforge Splint Helmet
+item.dragonforgeSplintChest.name=Dragonforge Splint Armor
+item.dragonforgeSplintLegs.name=Dragonforge Splint Leggings
+item.dragonforgeSplintBoots.name=Dragonforge Splint Boots
+
+
+
+item.bronzeHvyHelmet.name= Heavy Bronze Chain Helmet
+item.bronzeHvyChest.name= Heavy Bronze Chain Armor
+item.bronzeHvyLegs.name= Heavy Bronze Chain Leggings
+item.bronzeHvyBoots.name= Heavy Bronze Chain Boots
+
+item.ironHvyHelmet.name= Heavy Iron Chain Helmet
+item.ironHvyChest.name= Heavy Iron Chain Armor
+item.ironHvyLegs.name= Heavy Iron Chain Leggings
+item.ironHvyBoots.name= Heavy Iron Chain Boots
+
+item.steelHvyHelmet.name= Heavy Steel Chain Helmet
+item.steelHvyChest.name= Heavy Steel Chain Armor
+item.steelHvyLegs.name= Heavy Steel Chain Leggings
+item.steelHvyBoots.name= Heavy Steel Chain Boots
+
+item.deepIronHvyHelmet.name= Heavy Deep Iron Chain Helmet
+item.deepIronHvyChest.name= Heavy Deep Iron Hvy Armor
+item.deepIronHvyLegs.name= Heavy Deep Iron Chain Leggings
+item.deepIronHvyBoots.name= Heavy Deep Iron Chain Boots
+
+item.mithrilHvyHelmet.name= Heavy Mithril Chain Helmet
+item.mithrilHvyChest.name= Heavy Mithril Hvy Armor
+item.mithrilHvyLegs.name= Heavy Mithril Chain Leggings
+item.mithrilHvyBoots.name= Heavy Mithril Chain Boots
+
+item.guildedHvyHelmet.name= Heavy Guilded Chain Helmet
+item.guildedHvyChest.name= Heavy Guilded Chain Armor
+item.guildedHvyLegs.name= Heavy Guilded Chain Leggings
+item.guildedHvyBoots.name= Heavy Guilded Chain Boots
+
+item.encrustedHvyHelmet.name= Heavy Encrusted Chain Helmet
+item.encrustedHvyChest.name= Heavy Encrusted Chain Armor
+item.encrustedHvyLegs.name= Heavy Encrusted Chain Leggings
+item.encrustedHvyBoots.name= Heavy Encrusted Chain Boots
+
+item.dragonforgeHvyHelmet.name= Heavy Dragonforge Chain Helmet
+item.dragonforgeHvyChest.name= Heavy Dragonforge Chain Armor
+item.dragonforgeHvyLegs.name= Heavy Dragonforge Chain Leggings
+item.dragonforgeHvyBoots.name= Heavy Dragonforge Chain Boots
+
+
+
+item.bronzePlateHelmet.name=Bronze Plate Helmet
+item.bronzePlateChest.name=Bronze Plate Armor
+item.bronzePlateLegs.name=Bronze Plate Leggings
+item.bronzePlateBoots.name=Bronze Plate Boots
+
+item.ironPlateHelmet.name=Iron Plate Helmet
+item.ironPlateChest.name=Iron Plate Armor
+item.ironPlateLegs.name=Iron Plate Leggings
+item.ironPlateBoots.name=Iron Plate Boots
+
+item.guildedPlateHelmet.name=Guilded Plate Helmet
+item.guildedPlateChest.name=Guilded Plate Armor
+item.guildedPlateLegs.name=Guilded Plate Leggings
+item.guildedPlateBoots.name=Guilded Plate Boots
+
+item.steelPlateHelmet.name=Steel Plate Helmet
+item.steelPlateChest.name=Steel Plate Armor
+item.steelPlateLegs.name=Steel Plate Leggings
+item.steelPlateBoots.name=Steel Plate Boots
+
+item.deepIronPlateHelmet.name=Deep Iron Plate Helmet
+item.deepIronPlateChest.name=Deep Iron Plate Armor
+item.deepIronPlateLegs.name=Deep Iron Plate Leggings
+item.deepIronPlateBoots.name=Deep Iron Plate Boots
+
+item.mithrilPlateHelmet.name=Mithril Plate Helmet
+item.mithrilPlateChest.name=Mithril Plate Armor
+item.mithrilPlateLegs.name=Mithril Plate Leggings
+item.mithrilPlateBoots.name=Mithril Plate Boots
+
+item.encrustedPlateHelmet.name=Encrusted Plate Helmet
+item.encrustedPlateChest.name=Encrusted Plate Armor
+item.encrustedPlateLegs.name=Encrusted Plate Leggings
+item.encrustedPlateBoots.name=Encrusted Plate Boots
+
+item.dragonforgePlateHelmet.name=Dragonforge Plate Helmet
+item.dragonforgePlateChest.name=Dragonforge Plate Armor
+item.dragonforgePlateLegs.name=Dragonforge Plate Leggings
+item.dragonforgePlateBoots.name=Dragonforge Plate Boots
+
+item.helmetStealth.name=Stealth Helmet
+item.plateStealth.name=Stealth Armor
+item.legsStealth.name=Stealth Leggings
+item.bootsStealth.name=Stealth Boots
+
+item.bloom.name=Bloom
+item.hotItem.name=Hot
+
+arrow.reed.name=Reed Arrow
+arrow.bronze.name=Bronze Arrow
+arrow.iron.name=Iron Arrow
+arrow.steel.name=Steel Arrow
+arrow.mithril.name=Mithril Arrow
+arrow.silver.name=Silver Arrow
+arrow.dragon.name=Dragonforge Arrow
+arrow.encrusted.name=Encrusted Arrow
+arrow.deepiron.name=Deep Iron Arrow
+arrow.ignotumite.name=Ignotumite Arrow
+
+bodkin.bronze.name=Bronze Bodkin Arrow
+bodkin.iron.name=Iron Bodkin Arrow
+bodkin.steel.name=Steel Bodkin Arrow
+bodkin.mithril.name=Mithril Bodkin Arrow
+bodkin.silver.name=Silver Bodkin Arrow
+bodkin.dragon.name=Dragonforge Bodkin Arrow
+bodkin.encrusted.name=Encrusted Bodkin Arrow
+bodkin.deepiron.name=Deep Iron Bodkin Arrow
+bodkin.ignotumite.name=Ignotumite Bodkin Arrow
+
+broad.bronze.name=Bronze Broad Arrow
+broad.iron.name=Iron Broad Arrow
+broad.steel.name=Steel Broad Arrow
+broad.mithril.name=Mithril Broad Arrow
+broad.silver.name=Silver Broad Arrow
+broad.dragon.name=Dragonforge Broad Arrow
+broad.encrusted.name=Encrusted Broad Arrow
+broad.deepiron.name=Deep Iron Broad Arrow
+broad.ignotumite.name=Ignotumite Broad Arrow
+
+bolt.flint=Flint Bolt
+bolt.bronze=Bronze Bolt
+bolt.iron=Iron Bolt
+bolt.steel=Steel Bolt
+bolt.mithril=Mithril Bolt
+bolt.silver=Silver Bolt
+bolt.dragon=Dragonforge Bolt
+bolt.encrusted=Encrusted Bolt
+bolt.deepiron=Deep Iron Bolt
+bolt.ignotumite=Ignotumite Bolt
+
+state.workable=Workable
+state.unstable=Unstable
+
+bomb.mf.shrapnel=Shrapnel Bomb
+bomb.mf.fire=Fire Bomb
+bomb.mf.poison=Poison Bomb
+bomb.mf.concussion=Concussion Bomb
+bomb.mf=Bomb
+
+entity.Drake.name=Drake
+entity.HoundMF.name=Hound
+entity.Minotaur.name=Minotaur
+entity.SkeletalKnight.name=Skeletal Knight
+entity.SmallDragon.name=Dragon
+entity.Basilisk.name=Basilisk
+
+item.mfmisc.flux=Flux
+item.mfmisc.coke=Coke
+item.mfmisc.coalPowder=Coal Powder
+item.mfmisc.shrapnel=Shrapnel
+item.mfmisc.salt=Salt
+item.mfmisc.slag=Slag
+item.mfmisc.slagSmall=Small Slag
+
+item.mfmisc.lumpBronze=Hunk of Bronze
+item.mfmisc.lumpIron=Hunk of Iron
+item.mfmisc.lumpSteel=Hunk of Steel
+item.mfmisc.lumpDeepIron=Hunk of Deep Iron
+item.mfmisc.lumpMithril=Hunk of Mithril
+item.mfmisc.lumpSilver=Hunk of Silver
+item.mfmisc.lumpGold=Hunk of Gold
+item.mfmisc.lumpDragonforge=Hunk of Dragonforge
+item.mfmisc.lumpIgnotumite=Hunk of Ignotumite
+
+item.mfmisc.splintBronze=Bronze Splint
+item.mfmisc.splintIron=Iron Splint
+item.mfmisc.splintGuilded=Guilded Splint
+item.mfmisc.splintSteel=Steel Splint
+item.mfmisc.splintMithril=Mithril Splint
+item.mfmisc.splintDragonforge=Dragonforge Splint
+
+item.mfmisc.scaleBronze=Bronze Scale
+item.mfmisc.scaleIron=Iron Scale
+item.mfmisc.scaleGuilded=Guilded Scale
+item.mfmisc.scaleSteel=Steel Scale
+item.mfmisc.scaleMithril=Mithril Scale
+item.mfmisc.scaleDragonforge=Dragonforge Scale
+
+item.mfmisc.linkBronze=Bronze Links
+item.mfmisc.linkIron=Iron Links
+item.mfmisc.linkGuilded=Guilded Links
+item.mfmisc.linkSteel=Steel Links
+item.mfmisc.linkMithril=Mithril Links
+item.mfmisc.linkDragonforge=Dragonforge Links
+
+item.mfmisc.chainBronze=Bronze Chain Sheet
+item.mfmisc.chainIron=Iron Chain Sheet
+item.mfmisc.chainGuilded=Guilded Chain Sheet
+item.mfmisc.chainSteel=Steel Chain Sheet
+item.mfmisc.chainMithril=Mithril Chain Sheet
+item.mfmisc.chainDragonforge=Dragonforge Chain Sheet
+
+item.mfmisc.leather.raw=Raw Leather
+item.mfmisc.leather.salt=Salted Leather
+item.mfmisc.leather.rough=Rough Leather
+item.mfmisc.leather.gore=Gory Leather
+
+item.mfmisc.hideCow=Cow Hide
+item.mfmisc.paperSalt=Salty Paper
+item.mfmisc.hidePig=Pig Hide
+item.mfmisc.hideSheep=Sheep Hide
+item.mfmisc.hideHound=Wolf Pelt
+item.mfmisc.hideDrake=Drake Hide
+item.mfmisc.hideMinotaur=Minotaur Hide
+item.mfmisc.hideHorse=Horse Hide
+item.mfmisc.hideBasilisk.blue=Blue Basilisk Hide
+item.mfmisc.hideBasilisk.brown=Brown Basilisk Hide
+item.mfmisc.hideBasilisk.black=Nether Basilisk Hide
+
+item.mfmisc.fireGland=Dragon Flame Gland
+item.mfmisc.fireDust=Fire Dust
+item.mfmisc.ingotDragon=Dragonforge Steel Ingot
+item.mfmisc.ingotDragonImp=Impure Dragonforge Steel
+
+item.mfmisc.featherArrow=Arrow Feather
+
+item.mfmisc.plankIronbark=Ironbark Plank
+item.mfmisc.stickIronbark=Ironbark Stick
+item.mfmisc.plankEbony=Ebony Plank
+item.mfmisc.stickEbony=Ebony Stick
+
+item.mfmisc.stripLeather=Leather Strip
+item.mfmisc.beltLeather=Leather Belt
+item.mfmisc.leatherStud=Studded Leather
+item.mfmisc.leatherBlack=Blackened Leather
+item.mfmisc.buckle=Buckle
+item.mfmisc.twine=Twine
+
+item.mfmisc.limestone=Limestone Hunk
+
+item.mfmisc.glueWeak=Weak Glue
+item.mfmisc.glueStrong=Strong Glue
+item.mfmisc.haft=haft
+item.mfmisc.haftStrong=Strong Haft
+item.mfmisc.haftIronbark=Ironbark Haft
+item.mfmisc.haftEbony=Ebony Haft
+item.mfmisc.haftOrnate=Ornate Haft
+item.mfmisc.bowlWater=Water Bowl
+
+item.mfmisc.coinCopper=Copper Coin
+item.mfmisc.coinSilver=Silver Coin
+item.mfmisc.coinGold=Gold Coin
+
+item.mfmisc.tendon=Animal Tendon
+item.mfmisc.vine=Vine
+item.mfmisc.rockSharp=Sharp Rock
+item.mfmisc.shardCopper=Copper Shard
+item.mfmisc.shale=Shale
+
+item.mfmisc.padding=Padding
+item.mfmisc.plateBronze=Bronze Plate
+item.mfmisc.plateBronzeSmall=Padded Bronze Plate
+item.mfmisc.plateBronzeCurve=Curved Bronze Plate
+
+item.mfmisc.plateIron=Iron Plate
+item.mfmisc.plateIronSmall=Padded Iron Plate
+item.mfmisc.plateIronCurve=Curved Iron Plate
+
+item.mfmisc.plateGuilded=Guilded Plate
+item.mfmisc.plateGuildedSmall=Padded Guilded Plate
+item.mfmisc.plateGuildedCurve=Curved Guilded Plate
+
+item.mfmisc.plateSteel=Steel Plate
+item.mfmisc.plateSteelSmall=Padded Steel Plate
+item.mfmisc.plateSteelCurve=Curved Steel Plate
+
+item.mfmisc.plateMithril=Mithril Plate
+item.mfmisc.plateMithrilSmall=Padded Mithril Plate
+item.mfmisc.plateMithrilCurve=Curved Mithril Plate
+
+item.mfmisc.plateDragonforge=Dragonforge Plate
+item.mfmisc.plateDragonforgeSmall=Padded Dragonforge Plate
+item.mfmisc.plateDragonforgeCurve=Curved Dragonforge Plate
+
+item.mfmisc.plateEncrusted=Encrusted Plate
+item.mfmisc.plateEncrustedSmall=Padded Encrusted Plate
+item.mfmisc.plateEncrustedCurve=Curved Encrusted Plate
+
+item.mfmisc.hunkIgnotumite=Ignotumite Hunk
+item.mfmisc.ingotIgnotumite=Ignotumite Ingot
+item.mfmisc.dustIgnotumite=Ignotumite Dust
+item.mfmisc.ingotTin=Tin Ingot
+item.mfmisc.ingotCopper=Copper Ingot
+item.mfmisc.ingotBronze=Bronze Ingot
+item.mfmisc.ingotMithril=Mithril Ingot
+item.mfmisc.ingotIgnotumiteImpure=Impure Ignotumite Ingot
+item.mfmisc.mithrilRefined=Refined Mithril Ore
+item.mfmisc.ingotWroughtIron=Wrought Iron
+item.mfmisc.ingotGoldPure=Pure Gold
+item.mfmisc.nuggetSteel=Steel Nugget
+item.mfmisc.nitre=Niter
+item.mfmisc.sulfur=Sulfur
+
+item.mfmisc.coalInferno=Inferno Coal
+item.mfmisc.coalHell=Hellfire Coal
+item.mfmisc.coalSlow=Slowburn Coal
+
+item.mfmisc.crossbowMech=Crossbow Mechanism
+item.mfmisc.crossbowMech.repeat=Crossbow Repeater Mechanism
+item.mfmisc.crossbowBolts=Crossbow Bolt box
+
+item.mfmisc.arrowheadBronze=Bronze Arrowhead
+item.mfmisc.arrowheadIron=Iron Arrowhead
+item.mfmisc.arrowheadSteel=Steel Arrowhead
+item.mfmisc.arrowheadMithril=Mithril Arrowhead
+item.mfmisc.arrowheadSilver=Silver Arrowhead
+item.mfmisc.arrowheadEncrusted=Encrusted Arrowhead
+item.mfmisc.arrowheadDragonforge=Dragonforge Arrowhead
+item.mfmisc.arrowheadDeepIron=Deep Iron Arrowhead
+item.mfmisc.arrowheadIgnotumite=Ignotumite Arrowhead
+
+item.mfmisc.bodkinheadBronze=Bronze Bodkin Head
+item.mfmisc.bodkinheadIron=Iron Bodkin Head
+item.mfmisc.bodkinheadSteel=Steel Bodkin Head
+item.mfmisc.bodkinheadMithril=Mithril Bodkin Head
+item.mfmisc.bodkinheadSilver=Silver Bodkin Head
+item.mfmisc.bodkinheadEncrusted=Encrusted Bodkin Head
+item.mfmisc.bodkinheadDragonforge=Dragonforge Bodkin Head
+item.mfmisc.bodkinheadDeepIron=Deep Iron Bodkin Head
+item.mfmisc.bodkinheadIgnotumite=Ignotumite Bodkin Head
+
+item.mfmisc.broadheadBronze=Bronze Broad Head
+item.mfmisc.broadheadIron=Iron Broad Head
+item.mfmisc.broadheadSteel=Steel Broad Head
+item.mfmisc.broadheadMithril=Mithril Broad Head
+item.mfmisc.broadheadSilver=Silver Broad Head
+item.mfmisc.broadheadEncrusted=Encrusted Broad Head
+item.mfmisc.broadheadDragonforge=Dragonforge Broad Head
+item.mfmisc.broadheadDeepIron=Deep Iron Broad Head
+item.mfmisc.broadheadIgnotumite=Ignotumite Broad Head
+
+item.mfmisc.ingotDeepIron=Deep Iron Ingot
+item.mfmisc.scaleDeepIron=Deep Iron Scale
+item.mfmisc.linkDeepIron=Deep Iron Links
+item.mfmisc.chainDeepIron=Deep Iron Chain Sheet
+item.mfmisc.splintDeepIron=Deep Iron Splint
+item.mfmisc.plateDeepIron=Deep Iron Plate
+item.mfmisc.plateDeepIronSmall=Small Deep Iron Plate
+item.mfmisc.plateDeepIronCurve=Curved Deep Iron Plate
+
+item.shield.buckler.bronze.name=Bronze Buckler
+item.shield.buckler.iron.name=Iron Buckler
+item.shield.buckler.steel.name=Steel Buckler
+item.shield.buckler.mithril.name=Mithril Buckler
+item.shield.buckler.encrusted.name=Encrusted Buckler
+item.shield.buckler.guilded.name=Guilded Buckler
+item.shield.buckler.dragonforge.name=Dragonforge Buckler
+item.shield.buckler.deepiron.name=Deep Iron Buckler
+
+item.shield.kite.bronze.name=Bronze Kite Shield
+item.shield.kite.iron.name=Iron Kite Shield
+item.shield.kite.steel.name=Steel Kite Shield
+item.shield.kite.mithril.name=Mithril Kite Shield
+item.shield.kite.encrusted.name=Encrusted Kite Shield
+item.shield.kite.guilded.name=Guilded Kite Shield
+item.shield.kite.dragonforge.name=Dragonforge Kite Shield
+item.shield.kite.deepiron.name=Deep Iron Kite Shield
+
+item.shield.tower.bronze.name=Bronze Tower Shield
+item.shield.tower.iron.name=Iron Tower Shield
+item.shield.tower.steel.name=Steel Tower Shield
+item.shield.tower.mithril.name=Mithril Tower Shield
+item.shield.tower.encrusted.name=Encrusted Tower Shield
+item.shield.tower.guilded.name=Guilded Tower Shield
+item.shield.tower.dragonforge.name=Dragonforge Tower Shield
+item.shield.tower.deepiron.name=Deep Iron Tower Shield
+
+item.shield.round.strongwood.name=Reinforced Shield
+item.shield.round.ironbark.name=Ironbark Shield
+item.shield.round.ebony.name=Ebony Shield

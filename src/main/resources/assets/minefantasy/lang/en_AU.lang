@@ -1,0 +1,68 @@
+attribute.weapon.penetrateArmour=Armour Penetration
+attribute.weapon.armourPower=Armour Weakness
+attribute.weapon.boostarmourdamage=Armour Damage
+
+itemGroup.forgedarmour=Forged Armour
+
+item.pickIronForged.name=Iron Pick
+item.pickSteelForged.name=Steel Pick
+item.pickIgnotumiteForged.name=Ignotumite Pick
+item.pickTin.name=Tin Pick
+item.pickBronze.name=Bronze Pick
+item.pickMithril.name=Mithril Pick
+item.pickEncrusted.name=Encrusted Pick
+item.pickCopperForged.name=Copper Pick
+item.pickDragon.name=Dragonforge Pick
+
+item.mfmisc.nitre=Nitre
+tile.oreUtil.nitre.name=Nitre Ore
+achievement.minefantasy.plate.desc=Create Plate Armour
+
+item.rawhideChest.name=Rawhide Armour
+item.roughLeatherChest.name=Rough Leather Armour
+item.bronzeScaleChest.name=Bronze Scale Armour
+item.ironScaleChest.name=Iron Scale Armour
+item.guildedScaleChest.name=Guilded Scale Armour
+item.steelScaleChest.name=Steel Scale Armour
+item.mithrilScaleChest.name=Mithril Scale Armour
+item.deepIronScaleChest.name=Deep Iron Scale Armour
+item.encrustedScaleChest.name=Encrusted scale Armour
+item.dragonforgeScaleChest.name=Dragonforge Scale Armour
+
+item.bronzeChainChest.name=Bronze Chain Armour
+item.ironChainChest.override.name=Iron Chain Armour
+item.guildedChainChest.name=Guilded Chain Armour
+item.steelChainChest.name=Steel Chain Armour
+item.deepIronChainChest.name=Deep Iron Chain Armour
+item.mithrilChainChest.name=Mithril Chain Armour
+item.encrustedChainChest.name=Encrusted Chain Armour
+item.dragonforgeChainChest.name=Dragonforge Chain Armour
+
+item.bronzeSplintChest.name=Bronze Splint Armour
+item.ironSplintChest.name=Iron Splint Armour
+item.guildedSplintChest.name=Guilded Splint Armour
+item.steelSplintChest.name=Steel Splint Armour
+item.deepIronSplintChest.name=Deep Iron Splint Armour
+item.mithrilSplintChest.name=Mithril Splint Armour
+item.encrustedSplintChest.name=Encrusted Splint Armour
+item.dragonforgeSplintChest.name=Dragonforge Splint Armour
+
+item.bronzeHvyChest.name=Heavy Bronze Chain Armour
+item.ironHvyChest.name=Heavy Iron Chain Armour
+item.guildedHvyChest.name=Heavy Guilded Chain Armour
+item.steelHvyChest.name=Heavy Steel Chain Armour
+item.deepIronHvyChest.name=Heavy Deep Iron Chain Armour
+item.mithrilHvyChest.name=Heavy Mithril Chain Armour
+item.encrustedHvyChest.name=Heavy Encrusted Chain Armour
+item.dragonforgeHvyChest.name=Heavy Dragonforge Chain Armour
+
+item.bronzePlateChest.name=Bronze Plate Armour
+item.ironPlateChest.name=Iron Plate Armour
+item.guildedPlateChest.name=Guilded Plate Armour
+item.steelPlateChest.name=Steel Plate Armour
+item.deepIronPlateChest.name=Deep Iron Plate Armour
+item.mithrilPlateChest.name=Mithril Plate Armour
+item.encrustedPlateChest.name=Encrusted Plate Armour
+item.dragonforgePlateChest.name=Dragonforge Plate Armour
+
+item.plateStealth.name=Stealth Armour

@@ -1,0 +1,18 @@
+[
+{
+  "modid" : "MineFantasy",
+  "name" : "Mine Fantasy",
+  "version" : "Beta",
+  "url" : "http://www.minecraftforum.net/topic/1238049-125-%E2%98%85%E2%98%85minefantasy%E2%98%85%E2%98%85-medieval-and-fantasy-version-15-dragons-dragonforge-steel/",
+  "credits" : "Mod by AnonymousProductions",
+  "authors": [
+    "AnonymousProductions"
+  ],
+  "description": "MineFantasy aims to change Minecrafts gameplay to a more detailed build. Creating a range of newer processes to gain better tiers. from tanning to refining. It also adds more monsters and various items and changes to give gameplay more difficulty",
+  "logoFile" : "mineFantasy.png",
+  "updateUrl" : "http://www.minecraftforum.net/topic/1238049-125-%E2%98%85%E2%98%85minefantasy%E2%98%85%E2%98%85-medieval-and-fantasy-version-15-dragons-dragonforge-steel/",
+  "parent" : "",
+  "screenshots": [
+  ]
+}
+]
