@@ -239,7 +239,7 @@ public class RecipesMF {
     	{
     		addEasyIron();
     	}
-    	if(cfg.easyIron || MineFantasyBase.isDebug())
+    	else
     	{
     		addIron();
     	}
@@ -823,11 +823,11 @@ public class RecipesMF {
 	{
 		MineFantasyAPI.addCrushRecipe(new ItemStack(Item.ingotIron), com(ItemListMF.ingotWroughtIron));
 		MineFantasyAPI.addBlastRecipe(Block.oreIron.blockID, new ItemStack(Item.ingotIron));
-		MineFantasyAPI.addBloomRecipe(new ItemStack(Block.oreIron), com(ItemListMF.ingotWroughtIron), 1600);
+		MineFantasyAPI.addBloomRecipe(new ItemStack(Block.oreIron), com(ItemListMF.ingotWroughtIron), 800);
 	}
 	private static void addEasyIron() 
 	{
-		MineFantasyAPI.addBloomRecipe(new ItemStack(Block.oreIron), com(ItemListMF.ingotWroughtIron), 800);
+		MineFantasyAPI.addBloomRecipe(new ItemStack(Block.oreIron), com(ItemListMF.ingotWroughtIron), 500);
 		MineFantasyAPI.addSpecialSmelt(com(ItemListMF.ingotWroughtIron), -1, new ItemStack(Block.oreIron));
 		MineFantasyAPI.addRatioAlloy(8, new ItemStack(Item.ingotIron), 0, new Object[]
 		{

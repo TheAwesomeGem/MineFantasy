@@ -3345,7 +3345,7 @@ public class AnvilRecipesMF {
 			
 			'D', Item.diamond,
 			'O', Block.obsidian,
-			'C', com(ItemListMF.HellCoal),
+			'C', com(ItemListMF.infernoCoal),
 		});
 	}
 	
