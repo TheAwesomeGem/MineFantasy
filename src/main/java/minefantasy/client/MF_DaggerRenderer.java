@@ -48,7 +48,7 @@ public class MF_DaggerRenderer implements IItemRenderer {
     {
     	boolean isSneak = false;
     	
-    	//if(data.length >= 2 && data[1] instanceof EntityLivingBase)
+    	if(data.length >= 2 && data[1] instanceof EntityLivingBase)
     	{
     		isSneak = ((EntityLivingBase)data[1]).isSneaking();
     	}
