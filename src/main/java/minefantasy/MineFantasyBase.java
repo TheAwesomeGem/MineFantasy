@@ -61,10 +61,10 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import cpw.mods.fml.common.registry.TickRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-@Mod(modid = "MineFantasy", name = "Mine Fantasy", version = "1.2")
+@Mod(modid = "MineFantasy", name = "Mine Fantasy", version = "1.3.3")
 @NetworkMod(clientSideRequired = true, serverSideRequired = true, channels = { "MineFantasy" }, packetHandler = PacketManagerMF.class)
 public class MineFantasyBase{
-	public static String version = "1.2";
+	public static String version = "1.2.1";
 	//data_minefantasy, cfg, MFProxy__common, MFProxy_client, EventManagerMF
 	public boolean client = FMLCommonHandler.instance().getSide().isClient();
 	
