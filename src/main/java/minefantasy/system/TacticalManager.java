@@ -264,7 +264,7 @@ public class TacticalManager {
 				AC = getClassOf(material, AC);
 			}
 		}
-		AC = cfg.getClassFor(armour, AC);
+		AC = minefantasy.api.armour.ArmourWeightClass.getClassFor(armour, AC);
 		
 		return AC;
 	}

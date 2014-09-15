@@ -30,7 +30,7 @@ public class cfg {
 	//public static List<Integer> heavyArmours = new ArrayList();
 	//public static List<Integer> plateArmours = new ArrayList();
 	
-	public static HashMap<Integer, Integer>configArmours = new HashMap<Integer, Integer>();
+	//public static HashMap<Integer, Integer>minefantasy.api.armour.ArmourClass.configArmours = new HashMap<Integer, Integer>();
 	public static HashMap<Integer, Boolean>hangables = new HashMap<Integer, Boolean>();
 	
     public static int itemId;
@@ -454,7 +454,7 @@ public class cfg {
 				if(str.charAt(a) == ":".charAt(0) || a == str.length()-1)
 				{
 					int i = (Integer.valueOf(temp));
-					configArmours.put(i, tier);
+					minefantasy.api.armour.ArmourWeightClass.configArmours.put(i, tier);
 					if(MineFantasyBase.isDebug())
 					{
 						System.out.println("MineFantasy: Added Id " + i + " to " + type);
@@ -518,11 +518,11 @@ public class cfg {
 		}
 	}
 	
-	public static EnumArmourClass getClassFor(ItemStack item, EnumArmourClass Default)
+	/*public static EnumArmourClass getClassFor(ItemStack item, EnumArmourClass Default)
 	{
 		int id = item.itemID;
 		
-		if(!configArmours.isEmpty() && configArmours.containsKey(id))
+		if(!minefantasy.api.armour.ArmourClass.configArmours.isEmpty() && minefantasy.api.armour.ArmourClass.configArmours.containsKey(id))
 		{
 			if(hasId(0, id))return EnumArmourClass.LIGHT;
 			if(hasId(1, id))return EnumArmourClass.MEDIUM;
@@ -535,8 +535,8 @@ public class cfg {
 
 	private static boolean hasId(int tier, int id)
 	{
-		return configArmours.get(id) != null && configArmours.get(id) == tier;
-	}
+		return minefantasy.api.armour.ArmourClass.configArmours.get(id) != null && minefantasy.api.armour.ArmourClass.configArmours.get(id) == tier;
+	}*/
 	
 	public static boolean canRenderHung(int id)
 	{

@@ -24,7 +24,6 @@ import minefantasy.api.tailor.StringRecipes;
 import minefantasy.api.tanner.LeathercuttingRecipes;
 import minefantasy.api.tanner.TanningRecipes;
 import minefantasy.api.targeting.ITargetAllyMF;
-import minefantasy.system.cfg;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -853,7 +852,7 @@ public class MineFantasyAPI {
 	 */
 	public static void registerArmourClass(ItemStack armourItem, int armourClass)
 	{
-		cfg.configArmours.put(armourItem.itemID, armourClass);
+		minefantasy.api.armour.ArmourWeightClass.add(armourItem.itemID, armourClass);
 	}
 
 }
