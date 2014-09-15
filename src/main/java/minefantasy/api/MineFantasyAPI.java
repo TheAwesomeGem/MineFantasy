@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cpw.mods.fml.common.FMLCommonHandler;
-
 import minefantasy.api.anvil.CraftingManagerAnvil;
+import minefantasy.api.armour.EnumArmourClass;
 import minefantasy.api.cooking.FoodPrepRecipe;
 import minefantasy.api.cooking.OvenRecipes;
 import minefantasy.api.forge.*;
@@ -24,6 +24,7 @@ import minefantasy.api.tailor.StringRecipes;
 import minefantasy.api.tanner.LeathercuttingRecipes;
 import minefantasy.api.tanner.TanningRecipes;
 import minefantasy.api.targeting.ITargetAllyMF;
+import minefantasy.system.cfg;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -840,5 +841,19 @@ public class MineFantasyAPI {
 	{
 		OvenRecipes.addSmelting(input, output, exp);
 	}
-	
+	/**
+	 * Adds an item to a specific armour weight class
+	 * 
+	 * @param armourItem The armour item
+	 * @param armourClass the weight class to used:
+	 * 		0 = light.
+	 * 		1 = medium.
+	 * 		2 = heavy.
+	 * 		3 = plate.
+	 */
+	public static void registerArmourClass(ItemStack armourItem, int armourClass)
+	{
+		cfg.configArmours.put(armourItem.itemID, armourClass);
+	}
+
 }

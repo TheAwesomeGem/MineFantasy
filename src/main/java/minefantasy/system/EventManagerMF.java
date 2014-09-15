@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 import java.util.Random;
 
 import cpw.mods.fml.common.FMLCommonHandler;
-
+import cpw.mods.fml.common.FMLLog;
 import minefantasy.MineFantasyBase;
 import minefantasy.api.MineFantasyAPI;
 import minefantasy.api.anvil.ITongs;
@@ -110,57 +110,81 @@ public class EventManagerMF
 				}
 			}
 		}
-		if(name.equals("Skeleton"))
-		{
-			EntityLivingBase dropper = event.entityLiving;
-			for(EntityItem item : event.drops)
-			{
-				if(item.getEntityItem().isItemEqual(new ItemStack(Item.bow)))
-				{	
-					item.setEntityItemStack(new ItemStack(ItemListMF.shortbow));
-				}
-			}
-		}
-		if(name.equals("EntityHorse") ||name.equals("Cow") || enClass.getName().endsWith("EntityAtmosBison") || enClass.getName().endsWith("EntityTroll") || enClass.getName().endsWith("MoCEntityHorse") || enClass.getName().endsWith("MoCEntityFox") || enClass.getName().endsWith("MoCEntityHorseMob") || enClass.getName().endsWith("MoCEntityGoat"))
-		{
-			EntityLivingBase dropper = event.entityLiving;
+
+		EntityLivingBase dropper = event.entityLiving;
+
+		
+		
+		/*if(name.equals("EntityHorse") ||name.equals("Cow") || enClass.getName().endsWith("EntityAtmosBison") || enClass.getName().endsWith("EntityTroll") 
+				|| enClass.getName().endsWith("MoCEntityHorse") || enClass.getName().endsWith("MoCEntityFox") || enClass.getName().endsWith("MoCEntityHorseMob") 
+				|| enClass.getName().endsWith("MoCEntityGoat")||enClass.getName().endsWith("GaiaCentaur")||enClass.getName().endsWith("GaiaHunter"))
+		{*/
 			for(EntityItem item : event.drops)
 			{
 				if(item.getEntityItem().isItemEqual(new ItemStack(Item.leather)))
 				{	
 					item.setDead();
 				}
-			}
-			if(name.equals("EntityHorse"))
+			
+			if(name.equals("EntityHorse")||enClass.getName().endsWith("GaiaCentaur")||enClass.getName().endsWith("MoCEntityHorse")|| enClass.getName().endsWith("MoCEntityHorseMob"))
 			{
 				dropHide(event.lootingLevel, ItemListMF.hideHorse, dropper);
 			}
-			else
+			else if(enClass.getName().endsWith("EntityAtmosBison"))
 			{
 				dropHide(event.lootingLevel, ItemListMF.rawHide, dropper);
 			}
+			else if(enClass.getName().endsWith("GaiaHunter"))
+			{
+				dropHide(event.lootingLevel, ItemListMF.leatherRaw, dropper);
+			}
+			else if(enClass.getName().endsWith("MoCEntityFox"))
+			{
+				dropHide(event.lootingLevel, ItemListMF.hideHound, dropper);
+			}
+			else if(enClass.getName().endsWith("EntityTroll"))
+			{
+				dropHide(event.lootingLevel, ItemListMF.hideHound, dropper);
+			}
+			else if(name.equals("Cow"))
+			{
+				dropHide(event.lootingLevel, ItemListMF.rawHide, dropper);
+			}
+			else
+			{
+				if (!enClass.getName().startsWith("net.minecraft")&&!enClass.getName().startsWith("minefantasy")){
+					FMLLog.warning("[MineFantasy] "+enClass.getName()+"is attempting to drop vanilla leather, report this to the developers");
+					dropHide(event.lootingLevel, ItemListMF.rawHide, dropper);
+				}
+			}
 		}
-		if(name.equals("Pig"))
+		/*else
 		{
-			EntityLivingBase dropper = event.entityLiving;
-			
-			dropHide(event.lootingLevel, ItemListMF.hidePig, dropper);
-		}	
+			for(EntityItem item : event.drops)
+			{
+				if(item.getEntityItem().isItemEqual(new ItemStack(Item.leather)))
+				{	
+					FMLLog.warning("[MineFantasy] "+enClass.getName()+"is dropping vanilla leather, report this to the developers");
+				}
+			}
+		}*/
+	
 		if(name.equals("Skeleton"))
 		{
-			EntityLivingBase dropper = event.entityLiving;
 			for(EntityItem item : event.drops)
 			{
 				if(item.getEntityItem().isItemEqual(new ItemStack(Item.coal)))
 				{	
 					item.setEntityItemStack(new ItemStack(ItemListMF.misc, 1, ItemListMF.HellCoal));
 				}
+				else if(item.getEntityItem().isItemEqual(new ItemStack(Item.bow)))
+				{	
+					item.setEntityItemStack(new ItemStack(ItemListMF.shortbow));
+				}
 			}
 		}
-		if(name.equals("Sheep"))
+		if(name.equals("Sheep")||name.toLowerCase().contains("sheep")||name.toLowerCase().contains("goat"))
 		{
-			EntityLivingBase dropper = event.entityLiving;
-			
 			dropHide(event.lootingLevel, ItemListMF.hideSheep, dropper);
 			
 			if(cfg.dropMutton)
@@ -183,8 +207,6 @@ public class EventManagerMF
 		}	
 		if(name.equals("Chicken"))
 		{
-			EntityLivingBase dropper = event.entityLiving;
-			
 			int amount = dropper.getRNG().nextInt(2) + 1 + dropper.getRNG().nextInt(1 + event.lootingLevel);
 			
 			ItemStack featherdrop = new ItemStack(Item.feather);
@@ -194,7 +216,6 @@ public class EventManagerMF
 		}	
 		if(name.equals("Blaze"))
 		{
-			EntityLivingBase dropper = event.entityLiving;
 			
 			int amount = 1 + dropper.getRNG().nextInt(1 + event.lootingLevel);
 			
@@ -226,7 +247,6 @@ public class EventManagerMF
 		
 		if(event.entityLiving instanceof EntityWolf/* && !(event.entityLiving instanceof EntityHound)*/)
 		{
-			EntityWolf dropper = (EntityWolf)event.entityLiving;
 			dropHide(event.lootingLevel, ItemListMF.hideHound, dropper);
 		}
 	}
