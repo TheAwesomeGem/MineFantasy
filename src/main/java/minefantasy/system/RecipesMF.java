@@ -626,6 +626,27 @@ public class RecipesMF {
                     'C', Block.blockClay,
                     'P', ItemListMF.plank,});
         
+        GameRegistry.addRecipe(new ItemStack(BlockListMF.clayWall, 1, 1), new Object[]{
+            "P P",
+            " C ",
+            "P P",
+            'C', BlockListMF.clayWall,
+            'P', ItemListMF.plank,});
+        
+        GameRegistry.addRecipe(new ItemStack(BlockListMF.clayWall, 1, 2), new Object[]{
+            "  P",
+            " C ",
+            "PP ",
+            'C', BlockListMF.clayWall,
+            'P', ItemListMF.plank,});
+        
+        GameRegistry.addRecipe(new ItemStack(BlockListMF.clayWall, 1, 3), new Object[]{
+            "PP ",
+            " C ",
+            "  P",
+            'C', BlockListMF.clayWall,
+            'P', ItemListMF.plank,});
+
         GameRegistry.addShapelessRecipe(new ItemStack(ItemListMF.misc, 8, ItemListMF.fireExplosive), new Object[]{
                     new ItemStack(ItemListMF.misc, 1, ItemListMF.fireGland), Item.gunpowder
                 });

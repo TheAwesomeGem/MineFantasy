@@ -7,16 +7,8 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.StatCollector;
 
-/**
- *
- * @author Anonymous Productions
- * 
- * Sources are provided for educational reasons.
- * though small bits of code, or methods can be used in your own creations.
- */
-public class ItemBlockCobbbrick extends ItemBlock{
-
-    public ItemBlockCobbbrick(int id)
+public class ItemBlockWallclayMF extends ItemBlock{
+	public ItemBlockWallclayMF(int id)
     {
         super(id);
         this.setMaxDamage(0);
@@ -46,18 +38,14 @@ public class ItemBlockCobbbrick extends ItemBlock{
         switch(i)
         {
             case 1:
-                return StatCollector.translateToLocal("tile.cobbBrick.mossy");
+                return StatCollector.translateToLocal("tile.clayWall.cross");
             case 2:
-                return StatCollector.translateToLocal("tile.cobbBrick.cracked");
+                return StatCollector.translateToLocal("tile.clayWall.diagonal1");
                 
             case 3:
-                return StatCollector.translateToLocal("tile.cobbBrick.rough");
-            case 4:
-            	return StatCollector.translateToLocal("tile.cobbBrick.rough.mossy");
-            case 5:
-               	return StatCollector.translateToLocal("tile.cobbBrick.rough.cracked");
+                return StatCollector.translateToLocal("tile.clayWall.diagonal2");
                 
         }
-        return StatCollector.translateToLocal("tile.cobbBrick");
+        return StatCollector.translateToLocal("tile.clayWall");
     }
 }

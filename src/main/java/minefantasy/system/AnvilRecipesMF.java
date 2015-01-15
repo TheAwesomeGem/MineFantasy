@@ -3336,7 +3336,7 @@ public class AnvilRecipesMF {
 		addFurnace(2, "ingotSteel", new ItemStack(BlockListMF.furnace, 1, 3), 0, 2, steelTime);
 		addFurnace(3, "ingotDeepIron", new ItemStack(BlockListMF.furnace, 1, 4), 0, 3, deepIronTime);
 
-		MineFantasyAPI.addAnvilRecipe(new ItemStack(BlockListMF.forge, 1, 2), false , 1, 3, 1500, new Object[] 
+		MineFantasyAPI.addAnvilRecipe(new ItemStack(BlockListMF.forge, 1, 2), 0, 1, 1500, new Object[] 
 		{
 			" DDD ",
 			"O C O",

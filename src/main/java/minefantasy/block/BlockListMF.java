@@ -42,7 +42,7 @@ public class BlockListMF
     public static final Block rePlanks = new BlockMedieval(cfg.rePlanksId, Material.wood, cfg.rePlanksId).setHardness(3F).setResistance(12F).setStepSound(Block.soundWoodFootstep).setUnlocalizedName("rePlanks");
     public static final Block oreUtil = new BlockUtilOre(cfg.oreUtilId).setHardness(2F).setResistance(5F).setStepSound(Block.soundStoneFootstep).setUnlocalizedName("oreSilver");
     public static final Block slate = (new BlockSlate(cfg.slateId)).setHardness(2.2F).setResistance(6F).setStepSound(Block.soundStoneFootstep).setUnlocalizedName("slate");
-    public static final Block clayWall = new BlockMedieval(cfg.clayWallId, Material.clay, cfg.clayWallId).setHardness(1F).setResistance(1.2F).setStepSound(Block.soundStoneFootstep).setUnlocalizedName("clayWall");
+    public static final Block clayWall = new BlockClayWall(cfg.clayWallId).setHardness(1F).setResistance(1.2F).setStepSound(Block.soundStoneFootstep).setUnlocalizedName("clayWall");
     public static final Block granite = new BlockMedieval(cfg.graniteId, Material.rock, cfg.graniteId).setHardness(5F).setResistance(18F).setStepSound(Block.soundStoneFootstep).setUnlocalizedName("granite");
     public static final Block graniteBrick = new BlockGraniteBrick(cfg.graniteBrickId).setHardness(8F).setResistance(25F).setStepSound(Block.soundStoneFootstep).setUnlocalizedName("graniteBrick");
     public static final Block planks = new BlockPlanksMF(cfg.planksId).setHardness(3F).setResistance(5F).setStepSound(Block.soundWoodFootstep).setUnlocalizedName("planksMF");
@@ -191,7 +191,7 @@ public class BlockListMF
         GameRegistry.registerBlock(rePlanks, "rePlanks");
         GameRegistry.registerBlock(oreUtil, ItemBlockUtilOre.class, "oreUtil");
         GameRegistry.registerBlock(oreIgnotumite, "oreIgnotumite");
-        GameRegistry.registerBlock(clayWall, "wallClayMF");
+        GameRegistry.registerBlock(clayWall, ItemBlockWallclayMF.class, "clayWall");
         GameRegistry.registerBlock(road, "roadMF");
         GameRegistry.registerBlock(Lowroad, "lowRoadMF");
         GameRegistry.registerBlock(granite, "graniteMF");

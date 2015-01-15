@@ -926,7 +926,7 @@ public class ItemListMF
 		MineFantasyAPI.addForgeFuel(misc.itemID, coke, 800, 400);//40s
 		MineFantasyAPI.addForgeFuel(misc.itemID, longCoal, 6000, 400);//5mins
 		MineFantasyAPI.addForgeFuel(Item.coal.itemID, 1200, 400);//1 min
-		MineFantasyAPI.addForgeFuel(misc.itemID, infernoCoal, 1600, 600);//1:30
+		MineFantasyAPI.addForgeFuel(misc.itemID, infernoCoal, 1600, 1300);//1:30
 		MineFantasyAPI.addForgeFuel(Item.blazePowder.itemID, 1200, 800, true);//1 min
 		MineFantasyAPI.addForgeFuel(misc.itemID, HellCoal, 2400, 1500, true);//2 mins
 		MineFantasyAPI.addForgeFuel(Item.bucketLava.itemID, 12000, 1000, true);//10 mins
