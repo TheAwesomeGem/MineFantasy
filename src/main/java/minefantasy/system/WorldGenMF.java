@@ -191,7 +191,7 @@ public class WorldGenMF implements IWorldGenerator{
 				}
 			}
 			
-			if (cfg.generateSlate && random.nextInt(5) == 0) {
+			if (cfg.generateSlate && random.nextInt(cfg.slateSpawnRate) == 0) {
 				for (int k = 0; k < 1; k++) {
 					int k1 = chunkX*16 + random.nextInt(16);
 					int k2 = random.nextInt(64);
@@ -303,7 +303,7 @@ public class WorldGenMF implements IWorldGenerator{
 				}
             }
 
-            if (cfg.limeCavern && random.nextInt(20) == 0) {
+            if (cfg.limeCavern && random.nextInt(cfg.limestoneSpawnRate) == 0) {
 				for (int k = 0; k < 1; k++) {
 					int k1 = chunkX*16 + random.nextInt(16);
 					int k2 = 32+random.nextInt(64);

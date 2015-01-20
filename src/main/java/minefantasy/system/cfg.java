@@ -192,6 +192,8 @@ public class cfg {
     public static boolean limeCavern;
     public static boolean generateSlate;
     public static double mithrilDistance;
+    public static int slateSpawnRate;
+    public static int limestoneSpawnRate;
     
     //STATS
     public static int statDragons;
@@ -205,6 +207,7 @@ public class cfg {
     public static boolean useBalance;
     public static boolean renderHot;
     public static boolean hardcoreCraft;
+    public static boolean hardcoreHafts;
     public static boolean easyBlooms;
     public static boolean easyIron;
     public static boolean hardcoreLeather;
@@ -382,6 +385,9 @@ public class cfg {
         limeCavern = Boolean.parseBoolean(this.get("Generate Limestone Cavern", this.CATEGORY_OREGENERATIONS, true).getString());
         generateSlate = Boolean.parseBoolean(this.get("Generate Slate", this.CATEGORY_OREGENERATIONS, true).getString());
         mithrilDistance = Double.parseDouble(this.get("Mithril Min Distance", this.CATEGORY_OREGENERATIONS, 1000D).getString());
+        slateSpawnRate = Integer.parseInt(this.get("Slate Spawn Rate, lower is more (Default: 25)", this.CATEGORY_OREGENERATIONS, 25).getString());
+        limestoneSpawnRate = Integer.parseInt(this.get("Limestone Spawn Rate, lower is more (Default: 480)", this.CATEGORY_OREGENERATIONS, 480).getString());
+        
         //STATS
         statDragons = Integer.parseInt(this.get("Dragons Slain Stat Id", Configuration.CATEGORY_GENERAL, 5000).getString());
         
@@ -414,11 +420,12 @@ public class cfg {
         basiliskMax = Integer.parseInt(this.get("Max basilisk meat buff (each 1.0 = half heart): default 60(30hearts)", CATEGORY_MISC, 60).getString());
         
         //hardcore
-        hardcoreCraft = Boolean.parseBoolean(this.get("Hardcore Crafting", CATEGORY_HARDCORE, false).getString());
+        hardcoreCraft = Boolean.parseBoolean(this.get("Hardcore Crafting", CATEGORY_HARDCORE, true).getString());
         hardcoreLeather = Boolean.parseBoolean(this.get("Hardcore Leather Tanning", CATEGORY_HARDCORE, false).getString());
         hardcoreFurnace = Boolean.parseBoolean(this.get("Remove Basic Furnace Recipe", CATEGORY_HARDCORE, true).getString());
         easyBlooms = Boolean.parseBoolean(this.get("Easy Bloomery Smelts", CATEGORY_HARDCORE, false).getString());
         easyIron = Boolean.parseBoolean(this.get("Simple Iron Smelting", CATEGORY_HARDCORE, false).getString());
+        hardcoreHafts = Boolean.parseBoolean(this.get("Hardcore Hafts", CATEGORY_HARDCORE, true).getString());
         
         configuration.save();
     }

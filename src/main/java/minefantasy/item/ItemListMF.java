@@ -738,6 +738,7 @@ public class ItemListMF
     public static final int smlPlateIron = 63;
     public static final int coinCopper = 64;
     public static final int haftStrong = 65;
+    
     public static final int limestoneHunk = 66;
     public static final int curvedPlateIron = 67;
     
@@ -752,15 +753,15 @@ public class ItemListMF
     public static final int chainBronze = 76;
     
     public static final int haftIronbark = 77;
+    
     //public static final int oreIron = 78;
     //public static final int oreGold = 79;
-    //public static final int oreSilver = 80;
-    
+    //public static final int oreSilver = 80; 
     public static final int haftOrnate = 81;
     //public static final int oreCopper = 82;
     public static final int haftEbony = 83;
    //public static final int oreTin = 84;
-    
+
     //public static final int studdedLeather = 85;
     //public static final int bowlWater = 86;
     public static final int stickIronbark = 87;
@@ -965,12 +966,18 @@ public class ItemListMF
     }
 	public static ItemStack component(int id)
 	{
-		return new ItemStack(misc, 1, id);
+		if (cfg.hardcoreHafts && (id == haft || id == haftStrong ||id == haftOrnate || id == haftEbony || id == haftIronbark))
+		{
+			return new ItemStack(misc,1,haft);
+		}else{
+			return new ItemStack(misc, 1, id);
+		}
 	}
 	public static ItemStack component(int id, int val)
 	{
 		return new ItemStack(misc, val, id);
 	}
+
 	private static void addChestGen()
 	{
 		//WeightedRandomChestContent

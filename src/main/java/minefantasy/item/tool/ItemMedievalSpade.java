@@ -35,6 +35,7 @@ public class ItemMedievalSpade extends ItemSpade implements IPublicMaterialItem,
         super(id, material);
         MinecraftForge.setToolClass(this, "shovel", material.getHarvestLevel());
         setCreativeTab(ItemListMF.tabTool);
+        this.damageVsEntity = material.getDamageVsEntity()+2;
     }
     @Override
 	public void getSubItems(int id, CreativeTabs tabs, List list)

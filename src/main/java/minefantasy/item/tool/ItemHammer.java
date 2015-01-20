@@ -43,6 +43,7 @@ public class ItemHammer extends ItemTool implements IHammer, IWeaponSpecial{
         this.setCreativeTab(ItemListMF.tabTool);
         maxStackSize = 1;
         level = mat == ToolMaterialMedieval.ORNATE ? 1 : 0;
+        this.damageVsEntity = mat.getDamageVsEntity()+2;
 	}
     @Override
     public boolean isFull3D() {
