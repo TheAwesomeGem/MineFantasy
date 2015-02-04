@@ -32,7 +32,6 @@ import org.lwjgl.opengl.GL12;
  */
 public class TileEntityOvenRenderer extends TileEntitySpecialRenderer
 {
-
 	private Random random = new Random();
 	public TileEntityOvenRenderer() 
 	{
@@ -119,10 +118,19 @@ public class TileEntityOvenRenderer extends TileEntitySpecialRenderer
 		GL11.glTranslatef(0, -pixel(3.5F), -pixel(openPixels));
         GL11.glPushMatrix();
         GL11.glRotatef(90, 1, 0, 0);
+        
+        try{
         renderItem((TileEntityOven) tile, d, d1, d2, f);
+        }catch(Exception Ex)
+        {
+        		if(cfg.renderWarnings){Minecraft.getMinecraft().thePlayer.addChatMessage("Don't put that in the oven.");}
+        }
+        
+        
         GL11.glPopMatrix();
 
 		GL11.glPopMatrix(); // end
+
 
 	}
 	
@@ -189,7 +197,6 @@ public class TileEntityOvenRenderer extends TileEntitySpecialRenderer
 	public float pixel(float count) {
 		return count * 0.0625F;
 	}
-	
 	
 	private void renderItem(TileEntityOven tile, double d, double d1, double d2, float f) 
 	{
@@ -271,7 +278,6 @@ public class TileEntityOvenRenderer extends TileEntitySpecialRenderer
 		        GL11.glPopMatrix();
 			}
 		}
-		
 	}
 
 	private ModelOven model;

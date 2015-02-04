@@ -4,6 +4,7 @@ import java.util.Random;
 
 import minefantasy.block.tileentity.TileEntityPrepBlock;
 import minefantasy.block.tileentity.TileEntityTailor;
+import minefantasy.system.cfg;
 import minefantasy.system.data_minefantasy;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -83,7 +84,15 @@ public class TileEntityTailorRenderer extends TileEntitySpecialRenderer
         model.renderModel(0.0625F); //renders  0.0625 is 1/16, (1 block = 1.0F)
         GL11.glPushMatrix();
         GL11.glScalef(0.75F, 0.75F, 0.75F);
+        
+        
+        try{
         renderItems(tile);
+        }catch(Exception Ex)
+        {
+        	if(cfg.renderWarnings){Minecraft.getMinecraft().thePlayer.addChatMessage("Don't put that on the tailor bench");}
+        }
+        
         GL11.glPopMatrix();
         GL11.glPopMatrix(); //end
 

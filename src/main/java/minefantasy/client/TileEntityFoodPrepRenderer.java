@@ -85,7 +85,17 @@ public class TileEntityFoodPrepRenderer extends TileEntitySpecialRenderer {
         GL11.glTranslatef(0, (1.0F + (5F*0.0625F)), 0);
         GL11.glPushMatrix();
         GL11.glRotatef(90, 1, 0, 0);
+        
+
+        try{
         renderItem((TileEntityPrepBlock) tile, d, d1, d2, f);
+        }catch(Exception Ex)
+        {
+        	if(cfg.renderWarnings){Minecraft.getMinecraft().thePlayer.addChatMessage("Don't put that on the benchtop");}
+        }
+        
+        
+        
         GL11.glPopMatrix();
         GL11.glPopMatrix(); //end
         

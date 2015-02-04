@@ -49,6 +49,7 @@ public class cfg {
     public static final String CATEGORY_HUD = "MineFantasy HUD Positions";
     
     public static String debug;
+    public static boolean renderWarnings;
     //BLOCKS
     public static int lanternId;
     public static int forgeId;
@@ -238,6 +239,8 @@ public class cfg {
     	configuration.load();
     	config = configuration;
     	debug = configuration.get(CATEGORY_MISC, "Debug Mode: (Requires Serial): ", "").getString();
+    	renderWarnings = Boolean.parseBoolean(this.get("Display block renderer alerts (These will spam the chat until resolved)", this.CATEGORY_MISC, true).getString());
+    	//renderWarnings = Boolean.parseBoolean(CATEGORY_MISC, "Display block renderer alerts (These will spam the chat until resolved)", true).getString());
     	//blockId = Integer.parseInt(configuration.getBlock("Block Base Id", 180).getString());
         itemId = Integer.parseInt(this.get("Item Base Id", Configuration.CATEGORY_ITEM, 1250).getString());
         lanternId = Integer.parseInt(this.get("Lantern", Configuration.CATEGORY_BLOCK, 180).getString());
@@ -385,7 +388,7 @@ public class cfg {
         limeCavern = Boolean.parseBoolean(this.get("Generate Limestone Cavern", this.CATEGORY_OREGENERATIONS, true).getString());
         generateSlate = Boolean.parseBoolean(this.get("Generate Slate", this.CATEGORY_OREGENERATIONS, true).getString());
         mithrilDistance = Double.parseDouble(this.get("Mithril Min Distance", this.CATEGORY_OREGENERATIONS, 1000D).getString());
-        slateSpawnRate = Integer.parseInt(this.get("Slate Spawn Rate, lower is more (Default: 25)", this.CATEGORY_OREGENERATIONS, 25).getString());
+        slateSpawnRate = Integer.parseInt(this.get("Slate Spawn Rate, lower is more (Default: 75)", this.CATEGORY_OREGENERATIONS, 75).getString());
         limestoneSpawnRate = Integer.parseInt(this.get("Limestone Spawn Rate, lower is more (Default: 480)", this.CATEGORY_OREGENERATIONS, 480).getString());
         
         //STATS

@@ -187,7 +187,18 @@ public class TileEntityAnvilRenderer extends TileEntitySpecialRenderer {
 			{
 				GL11.glPushMatrix();
 				GL11.glTranslated(xStart + (xGap)*x, yPos, yStart + (yGap)*y);
+				
+				
+				
+				try{
 				renderItem(tile.getStackInSlot(y*mX + x), scale);
+				}catch(Exception Ex)
+		        {
+					if(cfg.renderWarnings){Minecraft.getMinecraft().thePlayer.addChatMessage("Don't put that on the anvil");}
+		        }
+				
+				
+				
 				GL11.glPopMatrix();
 			}
 		}
