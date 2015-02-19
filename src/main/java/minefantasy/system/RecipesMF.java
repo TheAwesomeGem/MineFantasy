@@ -844,11 +844,11 @@ public class RecipesMF {
 	{
 		MineFantasyAPI.addCrushRecipe(new ItemStack(Item.ingotIron), com(ItemListMF.ingotWroughtIron));
 		MineFantasyAPI.addBlastRecipe(Block.oreIron.blockID, new ItemStack(Item.ingotIron));
-		MineFantasyAPI.addBloomRecipe(new ItemStack(Block.oreIron), com(ItemListMF.ingotWroughtIron), 800);
+		MineFantasyAPI.addBloomRecipe(new ItemStack(Block.oreIron), com(ItemListMF.ingotWroughtIron), 1600);
 	}
 	private static void addEasyIron() 
 	{
-		MineFantasyAPI.addBloomRecipe(new ItemStack(Block.oreIron), com(ItemListMF.ingotWroughtIron), 500);
+		MineFantasyAPI.addBloomRecipe(new ItemStack(Block.oreIron), com(ItemListMF.ingotWroughtIron), 800);
 		MineFantasyAPI.addSpecialSmelt(com(ItemListMF.ingotWroughtIron), -1, new ItemStack(Block.oreIron));
 		MineFantasyAPI.addRatioAlloy(8, new ItemStack(Item.ingotIron), 0, new Object[]
 		{
@@ -1118,6 +1118,8 @@ public class RecipesMF {
 	}
 	private static void addLeatherRecipes()
 	{
+		TanningRecipes.instance().addTanning(ItemListMF.misc.itemID, ItemListMF.hideGeneric, com(ItemListMF.leatherRaw, 4));
+		
     	TanningRecipes.instance().addTanning(ItemListMF.misc.itemID, ItemListMF.rawHide, com(ItemListMF.leatherRaw, 4));
     	TanningRecipes.instance().addTanning(ItemListMF.misc.itemID, ItemListMF.hideHound, com(ItemListMF.leatherRaw, 2));
     	TanningRecipes.instance().addTanning(ItemListMF.misc.itemID, ItemListMF.hideMinotaur, com(ItemListMF.leatherRaw, 8));

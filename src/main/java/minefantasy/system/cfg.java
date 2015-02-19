@@ -213,6 +213,7 @@ public class cfg {
     public static boolean easyIron;
     public static boolean hardcoreLeather;
     public static boolean hardcoreFurnace;
+    public static boolean hardcoreObsidianForge;
     public static boolean regen;
     public static boolean redstoneHammer;
     public static int regenLayer;
@@ -239,7 +240,7 @@ public class cfg {
     	configuration.load();
     	config = configuration;
     	debug = configuration.get(CATEGORY_MISC, "Debug Mode: (Requires Serial): ", "").getString();
-    	renderWarnings = Boolean.parseBoolean(this.get("Display block renderer alerts (These will spam the chat until resolved)", this.CATEGORY_MISC, true).getString());
+    	renderWarnings = Boolean.parseBoolean(this.get("Display block renderer alerts (These will spam the chat until resolved)", this.CATEGORY_MISC, false).getString());
     	//renderWarnings = Boolean.parseBoolean(CATEGORY_MISC, "Display block renderer alerts (These will spam the chat until resolved)", true).getString());
     	//blockId = Integer.parseInt(configuration.getBlock("Block Base Id", 180).getString());
         itemId = Integer.parseInt(this.get("Item Base Id", Configuration.CATEGORY_ITEM, 1250).getString());
@@ -429,6 +430,7 @@ public class cfg {
         easyBlooms = Boolean.parseBoolean(this.get("Easy Bloomery Smelts", CATEGORY_HARDCORE, false).getString());
         easyIron = Boolean.parseBoolean(this.get("Simple Iron Smelting", CATEGORY_HARDCORE, false).getString());
         hardcoreHafts = Boolean.parseBoolean(this.get("Hardcore Hafts", CATEGORY_HARDCORE, true).getString());
+        hardcoreObsidianForge = Boolean.parseBoolean(this.get("Hardcore Obsidian Forges", CATEGORY_HARDCORE, true).getString());
         
         configuration.save();
     }

@@ -3335,18 +3335,33 @@ public class AnvilRecipesMF {
 		addFurnace(1, com(ItemListMF.ingotWroughtIron), new ItemStack(BlockListMF.furnace, 1, 2), 0, 1, ironTime);
 		addFurnace(2, "ingotSteel", new ItemStack(BlockListMF.furnace, 1, 3), 0, 2, steelTime);
 		addFurnace(3, "ingotDeepIron", new ItemStack(BlockListMF.furnace, 1, 4), 0, 3, deepIronTime);
-
-		MineFantasyAPI.addAnvilRecipe(new ItemStack(BlockListMF.forge, 1, 2), 0, 1, 1500, new Object[] 
+		if(minefantasy.system.cfg.hardcoreObsidianForge){
+			MineFantasyAPI.addAnvilRecipe(new ItemStack(BlockListMF.forge, 1, 2), 0, 1, 1500, new Object[] 
+			{
+				" DDD ",
+				"O C O",
+				"OCCCO",
+				"IOOOI",
+				
+				'D', Item.diamond,
+				'O', Block.obsidian,
+				'C', com(ItemListMF.HellCoal),
+			});
+			}
+		else
 		{
-			" DDD ",
-			"O C O",
-			"OCCCO",
-			"IOOOI",
-			
-			'D', Item.diamond,
-			'O', Block.obsidian,
-			'C', com(ItemListMF.infernoCoal),
-		});
+			MineFantasyAPI.addAnvilRecipe(new ItemStack(BlockListMF.forge, 1, 2), 0, 1, 1500, new Object[] 
+			{
+				" DDD ",
+				"O C O",
+				"OCCCO",
+				"IOOOI",
+						
+				'D', Item.diamond,
+				'O', Block.obsidian,
+				'C', com(ItemListMF.infernoCoal),
+			});
+		}
 	}
 	
 	

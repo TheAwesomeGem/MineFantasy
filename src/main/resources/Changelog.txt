@@ -1,0 +1,30 @@
+================================[B1.3.7]================================
+-Set warning messages default to off
+-Reverted Iron bloom smelting times to AP's values
+-Fixed hide dropping methods, no longer dropping hide from every mob ever
+-Added array to include exceptions to the tendon dropping code for things such as Ents
+-Added generic hide item for the catchall leather drop replacer
+-Added config option for easy obsidian forge building (Inferno coal instead of Hell coal)
+================================[B1.3.6]================================
+-Added code to prevent renderer crash when putting certain items on MF blocks
+-Added config option to enable/disable the warning messages regarding the renderer bug
+-Changed default slate spawn rate to AP's actual original value
+================================[B1.3.5]================================
+-Fixed insanely high damage output on MF tools
+-Added config option to toggle haft usage (replaces all hafts in recipes with the basic haft)
+-Added config option to adjust rarity of slate and limestone
+-Reverted Mangoose's slate/limestone spawn rates to AP's original values
+-Changed Hardcore Crafting's default to enabled
+================================[B1.3.4]================================
+-Increased slate gen chance
+-Added Claywalls
+-Adjusted obsidian forge recipe
+-Increased temperature of inferno coal
+================================[B1.3.3]================================
+-Added dummy class for differentiating versions
+-Added console message about vanilla leather drops
+-Removed Cow hide drop from Mo' Creatures Foxes (Tanning recipes for all Mo' Creatures hides to come in MFbridge)
+-Changed Mo' Creatures Goats to drop sheep hide instead of cow
+-Added armour registration method to api
+-Combined skeleton drop methods
+-Added grimoire of gaia support to drops system

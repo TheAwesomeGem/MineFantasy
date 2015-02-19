@@ -893,6 +893,7 @@ public class ItemListMF
     public static final int bodkinheadDeepIron = 187;
     public static final int broadheadDeepIron = 188;
     public static final int arrowheadDeepIron = 189;
+    public static final int hideGeneric = 190;
     
 	public static void init() 
 	{

@@ -39,7 +39,7 @@ import net.minecraftforge.common.IShearable;
  */
 public class ItemMedievalComponent extends ItemMedieval implements ICustomDamager {
 
-    private int length = 190;
+    private int length = 191;
     private Icon[] icons;
 
 	public ItemMedievalComponent(int i) 
@@ -659,6 +659,9 @@ public class ItemMedievalComponent extends ItemMedieval implements ICustomDamage
         }
         if (type == 189) {
             return "arrowheadDeepIron";
+        }
+        if (type == 190) {
+            return "hideGeneric";
         }
         
         return "unused";

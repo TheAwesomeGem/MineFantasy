@@ -1,31 +1,26 @@
 package minefantasy.system;
 
-import java.text.DecimalFormat;
+import java.util.Iterator;
 import java.util.Random;
 
-import cpw.mods.fml.common.FMLCommonHandler;
-import cpw.mods.fml.common.FMLLog;
 import minefantasy.MineFantasyBase;
 import minefantasy.api.MineFantasyAPI;
 import minefantasy.api.anvil.ITongs;
 import minefantasy.api.arrow.ISpecialBow;
 import minefantasy.api.forge.TongsHelper;
-import minefantasy.api.weapon.*;
+import minefantasy.api.weapon.EnumWeaponType;
+import minefantasy.api.weapon.WeaponClass;
 import minefantasy.block.BlockListMF;
 import minefantasy.block.BlockSaplingMF;
 import minefantasy.entity.EntityArrowMF;
-import minefantasy.entity.IArrow;
 import minefantasy.item.ItemBloom;
-import minefantasy.item.mabShield.ItemShield;
-import minefantasy.item.tool.ItemTongs;
-import minefantasy.item.weapon.ItemBowMF;
-import minefantasy.item.weapon.ItemWeaponMF;
 import minefantasy.item.ItemHotItem;
 import minefantasy.item.ItemListMF;
 import minefantasy.item.ToolMaterialMedieval;
-import mods.battlegear2.api.PlayerEventChild;
+import minefantasy.item.weapon.ItemBowMF;
+import minefantasy.item.weapon.ItemWeaponMF;
 import mods.battlegear2.api.PlayerEventChild.QuiverArrowEvent;
-import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
@@ -34,9 +29,8 @@ import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.monster.EntityCreeper;
-import net.minecraft.entity.monster.EntitySkeleton;
-import net.minecraft.entity.monster.EntityZombie;
-import net.minecraft.entity.passive.*;
+import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.item.EnumToolMaterial;
@@ -44,27 +38,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.item.ItemTool;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.util.DamageSource;
-import net.minecraft.util.EntityDamageSource;
-import net.minecraft.util.EntityDamageSourceIndirect;
-import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.EnumMovingObjectType;
-import net.minecraft.util.MathHelper;
-import net.minecraft.util.MovingObjectPosition;
-import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import net.minecraft.world.gen.ChunkProviderServer;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CommandEvent;
-import net.minecraftforge.event.ForgeSubscribe;
 import net.minecraftforge.event.Event.Result;
+import net.minecraftforge.event.ForgeSubscribe;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.PlaySoundAtEntityEvent;
-import net.minecraftforge.event.entity.item.ItemEvent;
-import net.minecraftforge.event.entity.item.ItemExpireEvent;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
@@ -73,16 +53,13 @@ import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 import net.minecraftforge.event.entity.player.ArrowNockEvent;
 import net.minecraftforge.event.entity.player.BonemealEvent;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
-import net.minecraftforge.event.entity.player.ItemTooltipEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent.HarvestCheck;
-import net.minecraftforge.event.terraingen.OreGenEvent;
-import net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable;
-import net.minecraftforge.event.world.ChunkDataEvent;
-import net.minecraftforge.event.world.ChunkEvent;
-import net.minecraftforge.oredict.OreDictionary.OreRegisterEvent;
+import cpw.mods.fml.common.FMLLog;
 
 public class EventManagerMF 
 {
+	
+	public static String nonTendon[] = {"MoCEntityEnt"}; 
+	
 	@ForgeSubscribe
 	public void entityDrop(LivingDropsEvent event)
 	{
@@ -91,11 +68,12 @@ public class EventManagerMF
 		if(enClass != null && EntityList.classToStringMapping.get(enClass) != null)
 		{
 			name = (String) EntityList.classToStringMapping.get(enClass);
+			
 		}
 		
 		if(event.entityLiving instanceof EntityAnimal && cfg.hardcoreCraft)
 		{
-			boolean primitive = false;
+						boolean primitive = false;
 			if(event.source != null && event.source.getEntity() != null && event.source.getEntity() instanceof EntityPlayer)
 			{
 				primitive = isPrimitive(((EntityPlayer)event.source.getEntity()).getHeldItem());
@@ -104,71 +82,60 @@ public class EventManagerMF
 			Random rand = event.entityLiving.getRNG();
 			if(primitive)
 			{
-				for(int a = 0; a < 1 + rand.nextInt(4); a ++)
+				for(String ent : nonTendon)
 				{
-					event.entityLiving.entityDropItem(new ItemStack(ItemListMF.misc, 1, ItemListMF.tendon), 1.0F);
+					if (enClass.getName().endsWith(ent)){
+						break;
+					}else{
+						for(int a = 0; a < 1 + rand.nextInt(4); a ++){
+							event.entityLiving.entityDropItem(new ItemStack(ItemListMF.misc, 1, ItemListMF.tendon), 1.0F);
+						}
+					}
 				}
 			}
 		}
-
 		EntityLivingBase dropper = event.entityLiving;
 
-		
-		
-		/*if(name.equals("EntityHorse") ||name.equals("Cow") || enClass.getName().endsWith("EntityAtmosBison") || enClass.getName().endsWith("EntityTroll") 
-				|| enClass.getName().endsWith("MoCEntityHorse") || enClass.getName().endsWith("MoCEntityFox") || enClass.getName().endsWith("MoCEntityHorseMob") 
-				|| enClass.getName().endsWith("MoCEntityGoat")||enClass.getName().endsWith("GaiaCentaur")||enClass.getName().endsWith("GaiaHunter"))
-		{*/
-			for(EntityItem item : event.drops)
-			{
-				if(item.getEntityItem().isItemEqual(new ItemStack(Item.leather)))
-				{	
-					item.setDead();
-				}
+		for(EntityItem item : event.drops)
+		{
+			if(item.getEntityItem().isItemEqual(new ItemStack(Item.leather)))
+			{	
+				item.setDead();
 			
-			if(name.equals("EntityHorse")||enClass.getName().endsWith("GaiaCentaur")||enClass.getName().endsWith("MoCEntityHorse")|| enClass.getName().endsWith("MoCEntityHorseMob"))
-			{
-				dropHide(event.lootingLevel, ItemListMF.hideHorse, dropper);
-			}
-			else if(enClass.getName().endsWith("EntityAtmosBison"))
-			{
-				dropHide(event.lootingLevel, ItemListMF.rawHide, dropper);
-			}
-			else if(enClass.getName().endsWith("GaiaHunter"))
-			{
-				dropHide(event.lootingLevel, ItemListMF.leatherRaw, dropper);
-			}
-			else if(enClass.getName().endsWith("MoCEntityFox"))
-			{
-				dropHide(event.lootingLevel, ItemListMF.hideHound, dropper);
-			}
-			else if(enClass.getName().endsWith("EntityTroll"))
-			{
-				dropHide(event.lootingLevel, ItemListMF.hideHound, dropper);
-			}
-			else if(name.equals("Cow"))
-			{
-				dropHide(event.lootingLevel, ItemListMF.rawHide, dropper);
-			}
-			else
-			{
-				if (!enClass.getName().startsWith("net.minecraft")&&!enClass.getName().startsWith("minefantasy")){
-					FMLLog.warning("[MineFantasy] "+enClass.getName()+"is attempting to drop vanilla leather, report this to the developers");
-					dropHide(event.lootingLevel, ItemListMF.rawHide, dropper);
-				}
+						if(name.equals("EntityHorse")||enClass.getName().endsWith("GaiaCentaur")||enClass.getName().endsWith("MoCEntityHorse")|| enClass.getName().endsWith("MoCEntityHorseMob"))
+						{
+							dropHide(event.lootingLevel, ItemListMF.hideHorse, dropper);
+						}
+						else if(enClass.getName().endsWith("EntityAtmosBison"))
+						{
+							dropHide(event.lootingLevel, ItemListMF.rawHide, dropper);
+						}
+						else if(enClass.getName().endsWith("GaiaHunter"))
+						{
+							dropHide(event.lootingLevel, ItemListMF.leatherRaw, dropper);
+						}
+						else if(enClass.getName().endsWith("MoCEntityFox"))
+						{
+							dropHide(event.lootingLevel, ItemListMF.hideHound, dropper);
+						}
+						else if(enClass.getName().endsWith("EntityTroll"))
+						{
+							dropHide(event.lootingLevel, ItemListMF.hideHound, dropper);
+						}
+						else if(name.equals("Cow"))
+						{
+							dropHide(event.lootingLevel, ItemListMF.rawHide, dropper);
+                    	}
+						else
+						{
+							if (!enClass.getName().startsWith("net.minecraft")&&!enClass.getName().startsWith("minefantasy")){
+							    FMLLog.warning("[MineFantasy] "+enClass.getName()+"is attempting to drop vanilla leather, report this to the developers");
+		    					dropHide(event.lootingLevel, ItemListMF.hideGeneric, dropper); 
+							}
+						}
 			}
 		}
-		/*else
-		{
-			for(EntityItem item : event.drops)
-			{
-				if(item.getEntityItem().isItemEqual(new ItemStack(Item.leather)))
-				{	
-					FMLLog.warning("[MineFantasy] "+enClass.getName()+"is dropping vanilla leather, report this to the developers");
-				}
-			}
-		}*/
-	
+              
 		if(name.equals("Skeleton"))
 		{
 			for(EntityItem item : event.drops)
