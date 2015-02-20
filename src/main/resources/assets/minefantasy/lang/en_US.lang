@@ -87,7 +87,10 @@ tile.oreSilver.name=Silver Ore
 tile.oreCopper.name=Copper Ore
 tile.oreTin.name=Tin Ore
 tile.oreIgnotumite.name=Ignotumite Ore
-tile.clayWall.name=Clay Wall
+tile.clayWall=Clay Wall
+tile.clayWall.cross=Clay Wall With Crossed Beams
+tile.clayWall.diagonal1=Clay Wall With Diagonal Beam
+tile.clayWall.diagonal2=Clay Wall With Diagonal Beam
 tile.chimney=Chimney
 
 tile.oreUtil.nitre.name=Niter Ore
