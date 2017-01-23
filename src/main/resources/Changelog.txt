@@ -1,3 +1,5 @@
+================================[B1.3.7b]===============================
+-Revertedjanky tailor bench texture to AP's original
 ================================[B1.3.7]================================
 -Set warning messages default to off
 -Reverted Iron bloom smelting times to AP's values
